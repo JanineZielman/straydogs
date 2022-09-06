@@ -1,0 +1,38 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "settings",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "siteTitle": [
+      {
+        "type": "heading1",
+        "text": "Finally",
+        "spans": []
+      }
+    ],
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43"
+    },
+    "contact": [
+      {
+        "type": "paragraph",
+        "text": "Magna velit ea ea nisi consequat consectetur ullamco adipisicing. Ad nisi sint esse culpa.",
+        "spans": []
+      }
+    ]
+  }
+}
