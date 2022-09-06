@@ -82,6 +82,19 @@ footer{
 	padding-right: 2vw;
 }
 
+.language{
+	position: absolute;
+	left: 0;
+	bottom: 5vh;
+	width: 125px;
+	text-align: center;
+	a{
+		font-size: 28px;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+}
+
 
 // landing page
 .landing-page{
