@@ -26,16 +26,13 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "hero": {
+            "columns": {
               "type": "SharedSlice"
             },
-            "image": {
+            "hero_image": {
               "type": "SharedSlice"
             },
-            "text_with_features": {
-              "type": "SharedSlice"
-            },
-            "text_with_image": {
+            "big_text": {
               "type": "SharedSlice"
             }
           }

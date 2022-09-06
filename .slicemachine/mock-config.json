@@ -109,24 +109,40 @@
         }
       }
     },
-    "Hero": {
+    "HeroImage": {
       "default": {
-        "primary": {
-          "text": {
+        "primary": {}
+      }
+    },
+    "Columns": {
+      "default": {
+        "primary": {},
+        "items": {
+          "column1": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "column2": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
           }
         }
-      },
-      "withButton": {
-        "primary": {}
       }
     },
-    "LandingPage": {
+    "BigText": {
       "default": {
-        "primary": {}
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
       }
     }
   }

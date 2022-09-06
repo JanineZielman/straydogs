@@ -1,5 +1,211 @@
 {
   "slices": {
-    "components": {}
+    "components": {
+      "big_text": {
+        "library": "slices",
+        "id": "big_text",
+        "name": "BigText",
+        "description": "BigText",
+        "model": {
+          "id": "big_text",
+          "type": "SharedSlice",
+          "name": "BigText",
+          "description": "BigText",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "BigText",
+              "primary": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "heading3,hyperlink,em,strong"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "text": [
+                {
+                  "type": "heading3",
+                  "text": "Birds",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "big_text"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "columns": {
+        "library": "slices",
+        "id": "columns",
+        "name": "Columns",
+        "description": "Columns",
+        "model": {
+          "id": "columns",
+          "type": "SharedSlice",
+          "name": "Columns",
+          "description": "Columns",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Columns",
+              "primary": {},
+              "items": {
+                "column1": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Column1",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "column2": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Column2",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "column1": [
+                  {
+                    "type": "paragraph",
+                    "text": "Laborum id esse ipsum quis. Est magna veniam qui et enim est dolor. In ullamco esse ad sint elit ad deserunt est exercitation ad proident Lorem est pariatur amet.",
+                    "spans": []
+                  }
+                ],
+                "column2": [
+                  {
+                    "type": "paragraph",
+                    "text": "Velit labore veniam dolor veniam anim adipisicing laboris quis Lorem occaecat et et ipsum. Esse ipsum amet non tempor qui voluptate enim et fugiat duis duis dolor ut cillum amet. Adipisicing amet dolor consequat laborum eu elit dolor qui ullamco.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {},
+            "slice_type": "columns"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "hero_image": {
+        "library": "slices",
+        "id": "hero_image",
+        "name": "HeroImage",
+        "description": "HeroImage",
+        "model": {
+          "id": "hero_image",
+          "type": "SharedSlice",
+          "name": "HeroImage",
+          "description": "HeroImage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroImage",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "size": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Size",
+                    "placeholder": "",
+                    "options": [
+                      "small",
+                      "medium",
+                      "big"
+                    ],
+                    "default_value": "small"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117"
+              },
+              "size": "small"
+            },
+            "slice_type": "hero_image"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
   }
 }
