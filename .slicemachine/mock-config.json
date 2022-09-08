@@ -129,6 +129,18 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "column_1_small_text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "column_2_small_text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }

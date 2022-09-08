@@ -24,30 +24,38 @@ body{
 }
 
 h1{
-	font-size: 48px;
+	font-size: 52px;
+	font-weight: 300;
 }
 h2 {
-	font-size: 36px;
+	font-size: 40px;
 	font-weight: medium;
 }
 h3{
-	font-size: 26px;
+	font-size: 30px;
 	font-family: Monument-mono;
+	font-weight: 300;
 }
 h4{
-	font-size: 18px;
+	font-size: 20px;
 }
-p{
-	font-size: 18px;
+p, a{
+	font-size: 20px;
+}
+a{
+	line-height: 1;
 }
 .big{
-	font-size: 65px;
+	font-size: 70px;
 	line-height: 1;
 	font-family: Monument-mono;
 	font-weight: normal;
 }
 .small{
-	font-size: 14px;
+	font-size: 16px;
+	p{
+		font-size: 16px;
+	}
 }
 a{
 	color: white;
@@ -55,6 +63,7 @@ a{
 
 .navbar{
 	display: flex;
+	position: fixed;
 	.logo{
 		width: 250px;
 		height: 150px;
@@ -73,7 +82,7 @@ a{
 			color: white;
 			text-decoration: none;
 			margin: 0 3vw;
-			font-size: 28px;
+			font-size: 30px;
 			font-weight: medium;
 		}
 	}
@@ -87,7 +96,7 @@ footer{
 }
 
 .language{
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 5vh;
 	width: 125px;
@@ -107,7 +116,7 @@ footer{
 
 // landing page
 .landing-page{
-	height: calc(100vh - 120px);
+	height: 100vh;
 	display: flex;
 	align-items: flex-end;
 	.img-wrapper{
@@ -148,11 +157,11 @@ footer{
 
 // hero
 .hero-image{
-	height: calc(40vh - 120px);
+	height: 50vh;
 	&.medium{
-		height: 55vh;
+		height: 60vh;
 		.img-wrapper {
-			height: 55vh;
+			height: 60vh;
 		}
 	}
 	&.big {
@@ -166,7 +175,7 @@ footer{
 		z-index: -1;
 		top: 0;
 		right: 0;
-		height: 40vh;
+		height: 50vh;
 		width: calc(100vw - 140px);
 	
 		img {
@@ -174,10 +183,61 @@ footer{
 			height: 100%;
 			object-fit: cover;
 			border-radius: 0 0 0 15px;
+			filter: brightness(50%);
 		}
 	}
 }
 
 .big-text{
 	width: 100%;
+}
+
+.columns-section{
+	min-height: 60vh;
+	.title{
+		border-bottom: 1px solid white;
+		margin: 0;
+		font-weight: 300;
+	}
+	h3{
+		margin-bottom: 10px;
+	}
+	.column-small {
+		margin-top: 24px;
+		padding-top: 10px;
+		border-top: 1px solid white;
+		strong{
+			color: $green;
+		}
+	}
+	.columns {
+		display: flex;
+		justify-content: space-between;
+
+		&.contact {
+			.column {
+				display: flex;
+
+				&:nth-child(2) {
+					border-bottom: 0.5px solid white;
+				}
+			}
+
+			.column * {
+				width: 50%;
+			}
+		}
+
+		.column {
+			width: 45%;
+
+			h1 {
+				font-size: 65px;
+				line-height: 1;
+				font-family: Monument-mono;
+				font-weight: normal;
+				margin-left: 0;
+			}
+		}
+	}
 }
