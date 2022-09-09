@@ -3,6 +3,7 @@
 import BigText from './BigText';
 import Columns from './Columns';
 import FilmItem from './FilmItem';
+import Form from './Form';
 import HeroFilm from './HeroFilm';
 import HeroImage from './HeroImage';
 import Partners from './Partners';
@@ -13,6 +14,7 @@ export {
 	BigText,
 	Columns,
 	FilmItem,
+	Form,
 	HeroFilm,
 	HeroImage,
 	Partners,
@@ -24,6 +26,7 @@ export const components = {
 	big_text: BigText,
 	columns: Columns,
 	film_item: FilmItem,
+	form: Form,
 	hero_film: HeroFilm,
 	hero_image: HeroImage,
 	partners: Partners,

@@ -200,8 +200,8 @@ footer{
 }
 
 .columns-section{
-	padding: 48px 0;
-	min-height: 60vh;
+	padding: 148px 0;
+	// min-height: 60vh;
 	.title{
 		border-bottom: 1px solid white;
 		margin: 0;
@@ -251,7 +251,7 @@ footer{
 }
 
 .film-info{
-	min-height: 40vh;
+	// min-height: 40vh;
 	padding: 24px 0;
 	display: flex;
 	justify-content: flex-end;
@@ -297,7 +297,7 @@ footer{
 
 .film-items{
 	padding: 48px 0;
-	min-height: 50vh;
+	// min-height: 50vh;
 	h1{
 		border-bottom: 1px solid white;
 	}
@@ -330,7 +330,7 @@ footer{
 
 .team-section{
 	padding: 48px 0;
-	min-height: 80vh;
+	// min-height: 80vh;
 	h1{
 		border-bottom: 1px solid white;
 	}
@@ -399,6 +399,48 @@ footer{
 			border: 1px solid white;
 			margin: 0 14px 10px 0;
 			padding: 10px 20px;
+		}
+	}
+}
+
+.quote{
+	padding: 48px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	max-width: 900px;
+	text-align: center;
+	h3{
+		margin: 0;
+	}
+}
+
+.partners-section{
+	padding: 48px 0;
+	h1{
+		border-bottom: 1px solid white;
+	}
+	.logos{
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 48px;
+		border-radius: 15px 15px 0 0;
+	}
+	.image {
+		width: 100%;
+		height: 100px;
+		position: relative;
+		margin-bottom: 14px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: 15px 15px 0 0;
 		}
 	}
 }

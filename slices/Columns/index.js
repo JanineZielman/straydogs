@@ -12,7 +12,7 @@ const Columns = ({ slice }) => {
           <div className={`columns ${slice.primary?.sectionid}`}>
             <div className='column'>
               <PrismicRichText field={item.column1}/>
-              {item.column_1_small_text[0] && 
+              {item.column_1_small_text[0]?.text && 
                 <div className='column-small small'>
                   <PrismicRichText field={item.column_1_small_text}/>
                 </div>
@@ -20,7 +20,7 @@ const Columns = ({ slice }) => {
             </div>
             <div className='column'>
               <PrismicRichText field={item.column2}/>
-              {item.column_2_small_text[0] && 
+              {item.column_2_small_text[0]?.text && 
                 <div className='column-small small'>
                   <PrismicRichText field={item.column_2_small_text}/>
                 </div>

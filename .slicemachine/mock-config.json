@@ -64,7 +64,14 @@
     },
     "Quote": {
       "default": {
-        "primary": {}
+        "primary": {
+          "quote": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "ContactForm": {
@@ -176,6 +183,11 @@
       }
     },
     "Partners": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Form": {
       "default": {
         "primary": {}
       }
