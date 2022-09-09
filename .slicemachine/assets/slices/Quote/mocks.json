@@ -1,18 +1,20 @@
 [
   {
     "variation": "default",
-    "name": "Default",
-    "slice_type": "quote",
-    "items": [],
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
     "primary": {
+      "name": "win",
       "quote": [
         {
-          "type": "heading2",
-          "text": "Harness world-class applications",
+          "type": "paragraph",
+          "text": "Sunt ex occaecat reprehenderit tempor officia incididunt aliquip adipisicing magna et quis ullamco et. Cillum ad velit officia. Adipisicing amet commodo culpa ex aute.",
           "spans": []
         }
-      ],
-      "source": "productize granular blockchains"
-    }
+      ]
+    },
+    "slice_type": "quote"
   }
 ]

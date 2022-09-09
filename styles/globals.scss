@@ -13,6 +13,10 @@
 $green: #C4E31C;
 $red: rgba(255,0,0,0.35); 
 
+.green{
+	color: #C4E31C;
+}
+
 body{
 	background-color: black;
 	color: white;
@@ -29,7 +33,7 @@ h1{
 }
 h2 {
 	font-size: 40px;
-	font-weight: medium;
+	font-weight: 300;
 }
 h3{
 	font-size: 30px;
@@ -64,6 +68,7 @@ a{
 .navbar{
 	display: flex;
 	position: fixed;
+	z-index: 9;
 	.logo{
 		width: 250px;
 		height: 150px;
@@ -190,6 +195,7 @@ footer{
 
 .big-text{
 	width: 100%;
+	min-height: 50vh;
 }
 
 .columns-section{
@@ -238,6 +244,126 @@ footer{
 				font-weight: normal;
 				margin-left: 0;
 			}
+		}
+	}
+}
+
+.film-info{
+	min-height: 40vh;
+	padding: 24px 0;
+	display: flex;
+	justify-content: flex-end;
+	.wrapper{
+		width: 600px;
+	}
+	p{
+		margin: 0
+	}
+	h1{
+		margin: 0;
+		line-height: 1;
+	}
+	.extra-info{
+		margin-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid white;
+	}
+}
+
+.film-links{
+	margin-top: 24px;
+	a{
+		text-decoration: none;
+		margin-right: 30px;
+	}
+}
+
+.play-button{
+	padding-left: 30px;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 0;
+		background-image: url('play.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.film-items{
+	padding: 48px 0;
+	min-height: 50vh;
+	h1{
+		border-bottom: 1px solid white;
+	}
+	.wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.film-item{
+		width: 48%;
+		margin-bottom: 24px;
+		h3, p{
+			margin: 0;
+			line-height: 1.1;
+		}
+	}
+	.image {
+		width: 100%;
+		height: 20vw;
+		position: relative;
+		margin-bottom: 14px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 15px 15px 0 0;
+		}
+	}
+}
+
+.team-section{
+	padding: 48px 0;
+	min-height: 80vh;
+	h1{
+		border-bottom: 1px solid white;
+	}
+	.wrapper{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.team-item {
+		width: 30%;
+		margin-right: 3%;
+		margin-bottom: 24px;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		h3,
+		p {
+			margin: 0;
+			line-height: 1.1;
+		}
+		h3{
+			padding-bottom: 10px;
+			border-bottom: 1px solid white;
+		}
+	}
+	.image {
+		width: 100%;
+		height: 20vw;
+		position: relative;
+		margin-bottom: 14px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 15px 15px 0 0;
 		}
 	}
 }

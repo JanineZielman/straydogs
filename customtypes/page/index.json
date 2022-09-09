@@ -34,6 +34,18 @@
             },
             "big_text": {
               "type": "SharedSlice"
+            },
+            "team_item": {
+              "type": "SharedSlice"
+            },
+            "film_item": {
+              "type": "SharedSlice"
+            },
+            "hero_film": {
+              "type": "SharedSlice"
+            },
+            "quote": {
+              "type": "SharedSlice"
             }
           }
         }

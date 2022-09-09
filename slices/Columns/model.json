@@ -24,6 +24,18 @@
             "label": "Title",
             "placeholder": ""
           }
+        },
+        "height": {
+          "type": "Select",
+          "config": {
+            "label": "Height",
+            "placeholder": "",
+            "options": [
+              "big",
+              "small"
+            ],
+            "default_value": "big"
+          }
         }
       },
       "items": {

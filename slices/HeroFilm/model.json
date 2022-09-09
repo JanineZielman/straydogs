@@ -1,0 +1,100 @@
+{
+  "id": "hero_film",
+  "type": "SharedSlice",
+  "name": "HeroFilm",
+  "description": "HeroFilm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroFilm",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "year": {
+          "type": "Text",
+          "config": {
+            "label": "Year",
+            "placeholder": ""
+          }
+        },
+        "info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Info",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,hyperlink"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "video": {
+          "type": "Link",
+          "config": {
+            "label": "Video",
+            "placeholder": "",
+            "select": "media"
+          }
+        },
+        "height": {
+          "type": "Select",
+          "config": {
+            "label": "Height",
+            "placeholder": "",
+            "options": [
+              "big",
+              "small"
+            ],
+            "default_value": "big"
+          }
+        },
+        "play_label": {
+          "type": "Text",
+          "config": {
+            "label": "Play Label",
+            "placeholder": ""
+          }
+        },
+        "read_more_label": {
+          "type": "Text",
+          "config": {
+            "label": "Read More Label",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

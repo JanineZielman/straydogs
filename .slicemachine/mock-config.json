@@ -40,7 +40,9 @@
         }
       }
     },
-    "homepage": {}
+    "homepage": {},
+    "film": {},
+    "screening": {}
   },
   "slices": {
     "Text": {
@@ -62,14 +64,7 @@
     },
     "Quote": {
       "default": {
-        "primary": {
-          "quote": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
+        "primary": {}
       }
     },
     "ContactForm": {
@@ -155,6 +150,29 @@
             }
           }
         }
+      }
+    },
+    "TeamItem": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FilmItem": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "HeroFilm": {
+      "default": {
+        "primary": {
+          "info": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
       }
     }
   }

@@ -57,7 +57,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/BigText/default/preview.png",
+            "width": 1428,
+            "height": 536
+          }
+        }
       },
       "columns": {
         "library": "slices",
@@ -89,6 +95,18 @@
                   "config": {
                     "label": "Title",
                     "placeholder": ""
+                  }
+                },
+                "height": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Height",
+                    "placeholder": "",
+                    "options": [
+                      "big",
+                      "small"
+                    ],
+                    "default_value": "big"
                   }
                 }
               },
@@ -143,36 +161,37 @@
                 "column1": [
                   {
                     "type": "paragraph",
-                    "text": "Eu anim ullamco incididunt do sit. Incididunt ea mollit officia ipsum sint nostrud irure commodo eu sunt.",
+                    "text": "Incididunt adipisicing nisi ipsum consequat sit amet mollit deserunt. Anim consequat dolor do magna id eiusmod eiusmod cupidatat fugiat velit commodo est reprehenderit dolor eu. Elit esse culpa amet tempor in sunt tempor.",
                     "spans": []
                   }
                 ],
                 "column_1_small_text": [
                   {
                     "type": "paragraph",
-                    "text": "Ipsum do aute nisi et eu esse aute aliqua proident nulla dolor mollit. Esse amet reprehenderit eiusmod cupidatat ut do sit amet cupidatat incididunt.",
+                    "text": "Laborum consequat occaecat laborum duis id. Et deserunt pariatur dolor qui ad ea consequat in labore amet exercitation pariatur esse labore. Quis mollit dolor enim non minim.",
                     "spans": []
                   }
                 ],
                 "column2": [
                   {
                     "type": "paragraph",
-                    "text": "Amet dolor eu ea officia consectetur dolore irure voluptate. Mollit mollit esse exercitation.",
+                    "text": "Tempor ipsum in qui commodo reprehenderit excepteur laborum eiusmod esse exercitation ut. In laboris consectetur tempor enim eu cupidatat.",
                     "spans": []
                   }
                 ],
                 "column_2_small_text": [
                   {
                     "type": "paragraph",
-                    "text": "Aliqua esse cupidatat veniam ex in deserunt qui. Cupidatat anim officia do non dolor amet veniam cupidatat in. Ea ut laboris ipsum minim culpa pariatur tempor consectetur sint.",
+                    "text": "Dolor ut non ea occaecat irure laborum ullamco. Sunt minim qui in. Commodo commodo eiusmod mollit id excepteur non laborum ad.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "sectionid": "already",
-              "title": "rhyme"
+              "sectionid": "barn",
+              "title": "nine",
+              "height": "big"
             },
             "slice_type": "columns"
           }
@@ -181,7 +200,279 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/Columns/default/preview.png",
+            "width": 1452,
+            "height": 868
+          }
+        }
+      },
+      "film_item": {
+        "library": "slices",
+        "id": "film_item",
+        "name": "FilmItem",
+        "description": "FilmItem",
+        "model": {
+          "id": "film_item",
+          "type": "SharedSlice",
+          "name": "FilmItem",
+          "description": "FilmItem",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FilmItem",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "year": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Year",
+                    "placeholder": ""
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+                },
+                "title": "planned",
+                "year": "factor",
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              }
+            ],
+            "primary": {
+              "title": "teacher"
+            },
+            "slice_type": "film_item"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/FilmItem/default/preview.png",
+            "width": 1504,
+            "height": 1166
+          }
+        }
+      },
+      "hero_film": {
+        "library": "slices",
+        "id": "hero_film",
+        "name": "HeroFilm",
+        "description": "HeroFilm",
+        "model": {
+          "id": "hero_film",
+          "type": "SharedSlice",
+          "name": "HeroFilm",
+          "description": "HeroFilm",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroFilm",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "year": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Year",
+                    "placeholder": ""
+                  }
+                },
+                "info": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Info",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,em,strong,hyperlink"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "video": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Video",
+                    "placeholder": "",
+                    "select": "media"
+                  }
+                },
+                "height": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Height",
+                    "placeholder": "",
+                    "options": [
+                      "big",
+                      "small"
+                    ],
+                    "default_value": "big"
+                  }
+                },
+                "play_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Play Label",
+                    "placeholder": ""
+                  }
+                },
+                "read_more_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Read More Label",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Label",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "label": "forest"
+              }
+            ],
+            "primary": {
+              "title": "camp",
+              "year": "bone",
+              "info": [
+                {
+                  "type": "paragraph",
+                  "text": "Anim ex sit eiusmod quis adipisicing. Dolor amet aute deserunt in sunt proident aliquip enim ea elit incididunt qui ipsum veniam.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+              },
+              "video": {
+                "link_type": "Media",
+                "name": "mock",
+                "kind": "image",
+                "url": "https://source.unsplash.com/random",
+                "size": "10kB"
+              },
+              "height": "big",
+              "play_label": "night",
+              "read_more_label": "tribe"
+            },
+            "slice_type": "hero_film"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/HeroFilm/default/preview.png",
+            "width": 1584,
+            "height": 888
+          }
+        }
       },
       "hero_image": {
         "library": "slices",
@@ -254,7 +545,208 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/HeroImage/default/preview.png",
+            "width": 2122,
+            "height": 572
+          }
+        }
+      },
+      "quote": {
+        "library": "slices",
+        "id": "quote",
+        "name": "Quote",
+        "description": "Quote",
+        "model": {
+          "id": "quote",
+          "type": "SharedSlice",
+          "name": "Quote",
+          "description": "Quote",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Quote",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": ""
+                  }
+                },
+                "quote": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Quote",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "win",
+              "quote": [
+                {
+                  "type": "paragraph",
+                  "text": "Sunt ex occaecat reprehenderit tempor officia incididunt aliquip adipisicing magna et quis ullamco et. Cillum ad velit officia. Adipisicing amet commodo culpa ex aute.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "quote"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/Quote/default/preview.png",
+            "width": 1620,
+            "height": 574
+          }
+        }
+      },
+      "team_item": {
+        "library": "slices",
+        "id": "team_item",
+        "name": "TeamItem",
+        "description": "TeamItem",
+        "model": {
+          "id": "team_item",
+          "type": "SharedSlice",
+          "name": "TeamItem",
+          "description": "TeamItem",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TeamItem",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": ""
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "jobdescription": {
+                  "type": "Text",
+                  "config": {
+                    "label": "JobDescription",
+                    "placeholder": ""
+                  }
+                },
+                "phone": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Phone",
+                    "placeholder": ""
+                  }
+                },
+                "mail": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Mail",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "name": "sharp",
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89"
+                },
+                "jobdescription": "practice",
+                "phone": "special",
+                "mail": "hide",
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Deserunt culpa eiusmod anim dolor ut enim magna. Est amet aliquip id incididunt magna mollit proident exercitation fugiat sint fugiat ullamco ad magna ex.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": "cause"
+            },
+            "slice_type": "team_item"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/TeamItem/default/preview.png",
+            "width": 1174,
+            "height": 718
+          }
+        }
       }
     }
   }

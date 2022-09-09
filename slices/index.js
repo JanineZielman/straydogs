@@ -2,16 +2,28 @@
 
 import BigText from './BigText';
 import Columns from './Columns';
+import FilmItem from './FilmItem';
+import HeroFilm from './HeroFilm';
 import HeroImage from './HeroImage';
+import Quote from './Quote';
+import TeamItem from './TeamItem';
 
 export {
 	BigText,
 	Columns,
+	FilmItem,
+	HeroFilm,
 	HeroImage,
+	Quote,
+	TeamItem,
 };
 
 export const components = {
 	big_text: BigText,
 	columns: Columns,
+	film_item: FilmItem,
+	hero_film: HeroFilm,
 	hero_image: HeroImage,
+	quote: Quote,
+	team_item: TeamItem,
 };
