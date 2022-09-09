@@ -18,6 +18,29 @@
           "label": "Title",
           "placeholder": ""
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero_film": {
+              "type": "SharedSlice"
+            },
+            "big_text": {
+              "type": "SharedSlice"
+            },
+            "columns": {
+              "type": "SharedSlice"
+            },
+            "quote": {
+              "type": "SharedSlice"
+            },
+            "partners": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     }
   }

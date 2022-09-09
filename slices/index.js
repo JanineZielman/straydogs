@@ -5,6 +5,7 @@ import Columns from './Columns';
 import FilmItem from './FilmItem';
 import HeroFilm from './HeroFilm';
 import HeroImage from './HeroImage';
+import Partners from './Partners';
 import Quote from './Quote';
 import TeamItem from './TeamItem';
 
@@ -14,6 +15,7 @@ export {
 	FilmItem,
 	HeroFilm,
 	HeroImage,
+	Partners,
 	Quote,
 	TeamItem,
 };
@@ -24,6 +26,7 @@ export const components = {
 	film_item: FilmItem,
 	hero_film: HeroFilm,
 	hero_image: HeroImage,
+	partners: Partners,
 	quote: Quote,
 	team_item: TeamItem,
 };

@@ -23,7 +23,23 @@
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {}
+          "choices": {
+            "big_text": {
+              "type": "SharedSlice"
+            },
+            "columns": {
+              "type": "SharedSlice"
+            },
+            "partners": {
+              "type": "SharedSlice"
+            },
+            "hero_film": {
+              "type": "SharedSlice"
+            },
+            "quote": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     }

@@ -48,6 +48,7 @@ p, a{
 }
 a{
 	line-height: 1;
+	text-decoration: none;
 }
 .big{
 	font-size: 70px;
@@ -80,7 +81,7 @@ a{
 		}
 	}
 	nav{
-		margin-top: 14px;
+		margin-top: 24px;
 		margin-left: 2vw;
 		display: flex;
 		a{
@@ -199,6 +200,7 @@ footer{
 }
 
 .columns-section{
+	padding: 48px 0;
 	min-height: 60vh;
 	.title{
 		border-bottom: 1px solid white;
@@ -364,6 +366,39 @@ footer{
 			height: 100%;
 			object-fit: cover;
 			border-radius: 15px 15px 0 0;
+		}
+	}
+}
+
+
+.hero-film{
+	.hero-image{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		&.small{
+			height: 60vh;
+			.img-wrapper{
+				height: 100%;
+			}
+		}
+	}
+	.film-info{
+		height: 100vh;
+		align-items: flex-end;
+		.wrapper{
+			padding-bottom: 150px;
+		}
+	}
+	.main-links{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 24px;
+		a{
+			text-decoration: none;
+			border: 1px solid white;
+			margin: 0 14px 10px 0;
+			padding: 10px 20px;
 		}
 	}
 }

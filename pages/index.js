@@ -9,7 +9,7 @@ import { components } from "../slices/";
 import { Layout } from "../components/Layout";
 
 const Index = ({ page, navigation, settings }) => {
-  console.log(page)
+
   return (
     <Layout
       alternateLanguages={page.alternate_languages}
