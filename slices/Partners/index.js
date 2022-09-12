@@ -3,7 +3,6 @@ import { PrismicRichText } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const Partners = ({ slice }) => {
-  console.log(slice)
   return(
     <div className='partners-section'>
       <h1>{slice.primary.title}</h1>

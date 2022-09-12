@@ -46,6 +46,27 @@
             },
             "quote": {
               "type": "SharedSlice"
+            },
+            "basic_image": {
+              "type": "SharedSlice"
+            },
+            "embed": {
+              "type": "SharedSlice"
+            },
+            "film_info": {
+              "type": "SharedSlice"
+            },
+            "form": {
+              "type": "SharedSlice"
+            },
+            "image_text": {
+              "type": "SharedSlice"
+            },
+            "partners": {
+              "type": "SharedSlice"
+            },
+            "image_slider": {
+              "type": "SharedSlice"
             }
           }
         }

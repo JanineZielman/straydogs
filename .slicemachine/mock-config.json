@@ -161,7 +161,8 @@
     },
     "TeamItem": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "FilmItem": {
@@ -188,6 +189,46 @@
       }
     },
     "Form": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "BasicImage": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FilmInfo": {
+      "default": {
+        "primary": {},
+        "items": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ImageText": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Embed": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ImageSlider": {
       "default": {
         "primary": {}
       }

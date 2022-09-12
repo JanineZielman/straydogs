@@ -3,7 +3,6 @@ import { PrismicRichText, PrismicLink } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const HeroFilm = ({ slice }) => {
-  console.log(slice)
   return(
     <div className='hero-film'>
       <div className={`hero-image ${slice.primary.height}`}>

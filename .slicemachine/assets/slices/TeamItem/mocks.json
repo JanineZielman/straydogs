@@ -4,7 +4,7 @@
     "version": "sktwi1xtmkfgx8626",
     "items": [
       {
-        "name": "sharp",
+        "name": "closer",
         "image": {
           "dimensions": {
             "width": 900,
@@ -12,22 +12,26 @@
           },
           "alt": null,
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89"
+          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
         },
-        "jobdescription": "practice",
-        "phone": "special",
-        "mail": "hide",
+        "jobdescription": "mirror",
+        "phone": "difficult",
+        "mail": "real",
+        "website": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
         "description": [
           {
             "type": "paragraph",
-            "text": "Deserunt culpa eiusmod anim dolor ut enim magna. Est amet aliquip id incididunt magna mollit proident exercitation fugiat sint fugiat ullamco ad magna ex.",
+            "text": "Nostrud velit aliquip enim cupidatat nostrud sit ex quis aute laborum commodo pariatur id minim. Pariatur pariatur et veniam qui duis culpa ipsum do est consequat in irure. Eiusmod reprehenderit non consequat reprehenderit nulla veniam.",
             "spans": []
           }
         ]
       }
     ],
     "primary": {
-      "title": "cause"
+      "title": "situation"
     },
     "slice_type": "team_item"
   }

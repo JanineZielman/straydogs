@@ -1,6 +1,87 @@
 {
   "slices": {
     "components": {
+      "basic_image": {
+        "library": "slices",
+        "id": "basic_image",
+        "name": "BasicImage",
+        "description": "BasicImage",
+        "model": {
+          "id": "basic_image",
+          "type": "SharedSlice",
+          "name": "BasicImage",
+          "description": "BasicImage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "BasicImage",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "size": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Size",
+                    "placeholder": "",
+                    "options": [
+                      "small",
+                      "medium",
+                      "big"
+                    ],
+                    "default_value": "small"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": "great",
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+              },
+              "size": "small"
+            },
+            "slice_type": "basic_image"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "big_text": {
         "library": "slices",
         "id": "big_text",
@@ -205,6 +286,147 @@
             "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/Columns/default/preview.png",
             "width": 1452,
             "height": 868
+          }
+        }
+      },
+      "embed": {
+        "library": "slices",
+        "id": "embed",
+        "name": "Embed",
+        "description": "Embed",
+        "model": {
+          "id": "embed",
+          "type": "SharedSlice",
+          "name": "Embed",
+          "description": "Embed",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Embed",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "embed": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Embed",
+                    "placeholder": "Insert embed code (iframe)"
+                  }
+                },
+                "size": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Size",
+                    "placeholder": "",
+                    "options": [
+                      "small",
+                      "big"
+                    ],
+                    "default_value": "small"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": "tried",
+              "embed": "sense",
+              "size": "big"
+            },
+            "slice_type": "embed"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/Embed/default/preview.png",
+            "width": 2630,
+            "height": 334
+          }
+        }
+      },
+      "film_info": {
+        "library": "slices",
+        "id": "film_info",
+        "name": "FilmInfo",
+        "description": "FilmInfo",
+        "model": {
+          "id": "film_info",
+          "type": "SharedSlice",
+          "name": "FilmInfo",
+          "description": "FilmInfo",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FilmInfo",
+              "primary": {},
+              "items": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "text": [
+                  {
+                    "type": "paragraph",
+                    "text": "Laboris excepteur aliqua consequat duis ut qui velit.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {},
+            "slice_type": "film_info"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/FilmInfo/default/preview.png",
+            "width": 2894,
+            "height": 672
           }
         }
       },
@@ -667,6 +889,164 @@
           }
         }
       },
+      "image_slider": {
+        "library": "slices",
+        "id": "image_slider",
+        "name": "ImageSlider",
+        "description": "ImageSlider",
+        "model": {
+          "id": "image_slider",
+          "type": "SharedSlice",
+          "name": "ImageSlider",
+          "description": "ImageSlider",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ImageSlider",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+                }
+              }
+            ],
+            "primary": {
+              "title": "cloth"
+            },
+            "slice_type": "image_slider"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "image_text": {
+        "library": "slices",
+        "id": "image_text",
+        "name": "ImageText",
+        "description": "ImageText",
+        "model": {
+          "id": "image_text",
+          "type": "SharedSlice",
+          "name": "ImageText",
+          "description": "ImageText",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ImageText",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "heading3,paragraph,em,list-item,o-list-item,strong,hyperlink"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": "bone",
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+              },
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Deserunt ad ut dolor aute id.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "image_text"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/ImageText/default/preview.png",
+            "width": 2816,
+            "height": 1646
+          }
+        }
+      },
       "partners": {
         "library": "slices",
         "id": "partners",
@@ -897,6 +1277,15 @@
                     "placeholder": ""
                   }
                 },
+                "website": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Website",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "select": null
+                  }
+                },
                 "description": {
                   "type": "StructuredText",
                   "config": {
@@ -917,7 +1306,7 @@
             "version": "sktwi1xtmkfgx8626",
             "items": [
               {
-                "name": "sharp",
+                "name": "closer",
                 "image": {
                   "dimensions": {
                     "width": 900,
@@ -925,22 +1314,26 @@
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89"
+                  "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
                 },
-                "jobdescription": "practice",
-                "phone": "special",
-                "mail": "hide",
+                "jobdescription": "mirror",
+                "phone": "difficult",
+                "mail": "real",
+                "website": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Deserunt culpa eiusmod anim dolor ut enim magna. Est amet aliquip id incididunt magna mollit proident exercitation fugiat sint fugiat ullamco ad magna ex.",
+                    "text": "Nostrud velit aliquip enim cupidatat nostrud sit ex quis aute laborum commodo pariatur id minim. Pariatur pariatur et veniam qui duis culpa ipsum do est consequat in irure. Eiusmod reprehenderit non consequat reprehenderit nulla veniam.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "title": "cause"
+              "title": "situation"
             },
             "slice_type": "team_item"
           }
