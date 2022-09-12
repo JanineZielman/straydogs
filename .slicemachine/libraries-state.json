@@ -33,19 +33,6 @@
                     "constraint": {},
                     "thumbnails": []
                   }
-                },
-                "size": {
-                  "type": "Select",
-                  "config": {
-                    "label": "Size",
-                    "placeholder": "",
-                    "options": [
-                      "small",
-                      "medium",
-                      "big"
-                    ],
-                    "default_value": "small"
-                  }
                 }
               },
               "items": {},
@@ -61,7 +48,7 @@
               {}
             ],
             "primary": {
-              "title": "great",
+              "title": "volume",
               "image": {
                 "dimensions": {
                   "width": 900,
@@ -69,9 +56,8 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
-              },
-              "size": "small"
+                "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+              }
             },
             "slice_type": "basic_image"
           }
@@ -80,7 +66,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/BasicImage/default/preview.png",
+            "width": 2520,
+            "height": 1386
+          }
+        }
       },
       "big_text": {
         "library": "slices",
@@ -956,7 +948,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/ImageSlider/default/preview.png",
+            "width": 2836,
+            "height": 1616
+          }
+        }
       },
       "image_text": {
         "library": "slices",

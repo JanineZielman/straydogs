@@ -25,19 +25,6 @@
             "constraint": {},
             "thumbnails": []
           }
-        },
-        "size": {
-          "type": "Select",
-          "config": {
-            "label": "Size",
-            "placeholder": "",
-            "options": [
-              "small",
-              "medium",
-              "big"
-            ],
-            "default_value": "small"
-          }
         }
       },
       "items": {},
