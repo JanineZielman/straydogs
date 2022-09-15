@@ -45,14 +45,27 @@ export function linkResolver(doc) {
  *
  * @param config {prismicNext.CreateClientConfig} - A configuration object to
  */
+// export const createClient = (config = {}) => {
+//   const client = prismic.createClient(sm.apiEndpoint);
+
+//   prismicNext.enableAutoPreviews({
+//     client,
+//     previewData: config.previewData,
+//     req: config.req,
+//   });
+
+//   return client;
+// };
+
+
 export const createClient = (config = {}) => {
-  const client = prismic.createClient(sm.apiEndpoint);
+  const client = prismic.createClient(sm.apiEndpoint, config)
 
   prismicNext.enableAutoPreviews({
     client,
     previewData: config.previewData,
     req: config.req,
-  });
+  })
 
-  return client;
-};
+  return client
+}
