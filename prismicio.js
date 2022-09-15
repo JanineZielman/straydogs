@@ -14,17 +14,30 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
  *
  * @type {prismicH.LinkResolverFunction}
  */
-export const linkResolver = (doc) => {
-  if (doc.type === "page") {
-    if (doc.uid === "home") {
-      return "/";
-    } else {
-      return `/${doc.uid}`;
-    }
-  }
 
-  return "/";
-};
+export function linkResolver(doc) {
+  switch (doc.type) {
+    case 'homepage':
+      return '/'
+    case 'page':
+      return `/${doc.uid}`
+    default:
+      return null
+  }
+}
+
+// export const linkResolver = (doc) => {
+//   if (doc.type === "page") {
+//     if (doc.uid === "home") {
+//       return "/";
+//     } else {
+//       return `/${doc.uid}`;
+//     }
+//   }
+//   if (doc)
+
+//   return "/";
+// };
 
 /**
  * Creates a Prismic client for the project's repository. The client is used to
