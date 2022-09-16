@@ -3,7 +3,7 @@ import { PrismicRichText } from '@prismicio/react'
 
 const Embed = ({ slice }) => {
   return(
-    <div className={slice.primary.size}>
+    <div className={slice.primary.size} id="section">
       <div dangerouslySetInnerHTML={{ __html: slice.primary.embed }} />
     </div>
   )

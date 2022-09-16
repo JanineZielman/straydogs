@@ -33,7 +33,7 @@ const HeroFilm = ({ slice }) => {
             <a href={`#`} className="play-button">
               {slice.primary.play_label}
             </a>
-            <a href={`#`}>
+            <a href={`#section`}>
               {slice.primary.read_more_label}
             </a>
           </div>

@@ -4,7 +4,7 @@ import { PrismicNextImage } from "@prismicio/next";
 
 const BasicImage = ({ slice }) => {
   return(
-    <div className='basic-image'>
+    <div className='basic-image' id="section">
       {slice.primary.title &&
         <h1>{slice.primary.title}</h1>
       }

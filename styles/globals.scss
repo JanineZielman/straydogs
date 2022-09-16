@@ -17,6 +17,10 @@ $red: rgba(255,0,0,0.35);
 	color: #C4E31C;
 }
 
+html, body{
+	scroll-behavior: smooth;
+}
+
 body{
 	background-color: black;
 	color: white;
@@ -68,12 +72,12 @@ a{
 
 .navbar{
 	display: flex;
-	position: fixed;
+	position: relative;
 	z-index: 9;
 	.logo{
 		width: 250px;
 		height: 150px;
-		position: relative;
+		position: fixed;
 		img{
 			width: 100%;
 			height: auto;
@@ -81,8 +85,9 @@ a{
 		}
 	}
 	nav{
-		margin-top: 24px;
-		margin-left: 2vw;
+		padding: 14px 0;
+		margin-left: calc(250px + 5vw);
+		margin-top: 5px;
 		display: flex;
 		a{
 			color: white;
@@ -117,6 +122,7 @@ footer{
 .container{
 	width: calc(85vw - 250px);
 	margin-left: calc(250px + 5vw);
+	margin-top: -48px;
 }
 
 
@@ -172,6 +178,8 @@ footer{
 	}
 	&.big {
 		height: 100vh;
+		position: absolute;
+		z-index: -1;
 		.img-wrapper {
 			height: 100vh;
 		}
@@ -208,10 +216,10 @@ footer{
 		font-weight: 300;
 	}
 	h3{
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 	.column-small {
-		margin-top: 24px;
+		// margin-top: 24px;
 		padding-top: 10px;
 		border-top: 1px solid white;
 		strong{
@@ -221,6 +229,10 @@ footer{
 	.columns {
 		display: flex;
 		justify-content: space-between;
+
+		.column{
+			margin-bottom: 24px;
+		}
 
 		&.contact {
 			.column {
@@ -376,10 +388,21 @@ footer{
 		position: absolute;
 		width: 100%;
 		left: 0;
+		top: 0;
 		&.small{
 			height: 60vh;
 			.img-wrapper{
 				height: 100%;
+			}
+		}
+		&.big,
+		&.null {
+			height: 100vh;
+			position: absolute;
+			z-index: -1;
+
+			.img-wrapper {
+				height: 100vh;
 			}
 		}
 	}

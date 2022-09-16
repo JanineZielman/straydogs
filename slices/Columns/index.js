@@ -3,7 +3,7 @@ import { PrismicRichText } from '@prismicio/react'
 
 const Columns = ({ slice }) => {
   return(
-    <div className='columns-section'>
+    <div className='columns-section' id="section">
       {slice.primary?.title &&
         <h1 className='title'>{slice.primary?.title}</h1>
       }

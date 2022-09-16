@@ -14,7 +14,7 @@ const ImageSlider = ({ slice }) => {
     adaptiveHeight: true,
   };
   return(
-    <div className='image-slider'>
+    <div className='image-slider' id="section">
       <h1>{slice.primary.title}</h1>
        <Slider {...settings}>
           {slice.items.map((item,i) => {

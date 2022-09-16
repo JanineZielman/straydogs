@@ -3,9 +3,8 @@ import { PrismicRichText, PrismicLink } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const FilmItem = ({ slice }) => {
-  console.log(slice)
   return(
-    <div className='film-items'>
+    <div className='film-items' id="section">
       <h1>{slice.primary.title}</h1>
       <div className='wrapper'>
         {slice.items.map((item, i) => {

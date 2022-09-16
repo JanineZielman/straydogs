@@ -5,7 +5,7 @@ import { PrismicNextImage } from "@prismicio/next";
 const ImageText = ({ slice }) => {
   console.log(slice)
   return(
-    <div className='image-text'>
+    <div className='image-text' id="section">
       <div className='image'>
         <PrismicNextImage field={slice.primary.image} layout="fill" />
       </div>

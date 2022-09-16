@@ -45,7 +45,7 @@
             "label": "Column 1",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,list-item,o-list-item"
           }
         },
         "column_1_small_text": {
@@ -54,7 +54,7 @@
             "label": "Column 1 Small Text",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,strong,hyperlink,list-item,o-list-item,em"
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
           }
         },
         "column2": {
@@ -63,7 +63,7 @@
             "label": "Column 2",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,list-item,o-list-item"
           }
         },
         "column_2_small_text": {

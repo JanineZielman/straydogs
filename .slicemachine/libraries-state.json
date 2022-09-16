@@ -190,7 +190,7 @@
                     "label": "Column 1",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+                    "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,list-item,o-list-item"
                   }
                 },
                 "column_1_small_text": {
@@ -199,7 +199,7 @@
                     "label": "Column 1 Small Text",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,hyperlink,list-item,o-list-item,em"
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
                   }
                 },
                 "column2": {
@@ -208,7 +208,7 @@
                     "label": "Column 2",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+                    "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,list-item,o-list-item"
                   }
                 },
                 "column_2_small_text": {
@@ -234,36 +234,36 @@
                 "column1": [
                   {
                     "type": "paragraph",
-                    "text": "Incididunt adipisicing nisi ipsum consequat sit amet mollit deserunt. Anim consequat dolor do magna id eiusmod eiusmod cupidatat fugiat velit commodo est reprehenderit dolor eu. Elit esse culpa amet tempor in sunt tempor.",
+                    "text": "Nulla consequat reprehenderit commodo laborum ipsum. Nostrud proident velit ex dolor irure consectetur culpa laboris ex ad anim. Duis ad eu ex consectetur laboris ea reprehenderit.",
                     "spans": []
                   }
                 ],
                 "column_1_small_text": [
                   {
                     "type": "paragraph",
-                    "text": "Laborum consequat occaecat laborum duis id. Et deserunt pariatur dolor qui ad ea consequat in labore amet exercitation pariatur esse labore. Quis mollit dolor enim non minim.",
+                    "text": "Deserunt voluptate eu anim sit consequat nostrud amet.",
                     "spans": []
                   }
                 ],
                 "column2": [
                   {
                     "type": "paragraph",
-                    "text": "Tempor ipsum in qui commodo reprehenderit excepteur laborum eiusmod esse exercitation ut. In laboris consectetur tempor enim eu cupidatat.",
+                    "text": "Incididunt eu ullamco aute in officia aliquip excepteur. Adipisicing incididunt tempor veniam.",
                     "spans": []
                   }
                 ],
                 "column_2_small_text": [
                   {
                     "type": "paragraph",
-                    "text": "Dolor ut non ea occaecat irure laborum ullamco. Sunt minim qui in. Commodo commodo eiusmod mollit id excepteur non laborum ad.",
+                    "text": "Excepteur culpa consectetur deserunt minim et tempor sunt ipsum eiusmod laborum.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "sectionid": "barn",
-              "title": "nine",
+              "sectionid": "coast",
+              "title": "suit",
               "height": "big"
             },
             "slice_type": "columns"

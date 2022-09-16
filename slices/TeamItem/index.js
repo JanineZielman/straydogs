@@ -4,7 +4,7 @@ import { PrismicNextImage } from "@prismicio/next";
 
 const TeamItem = ({ slice }) => {
   return(
-    <div className='team-section'>
+    <div className='team-section' id="section">
       <h1>{slice.primary.title}</h1>
       <div className="wrapper">
         {slice.items.map((item, i) => {
