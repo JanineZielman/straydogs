@@ -1,9 +1,6 @@
 import React from 'react'
-import { PrismicRichText, PrismicLink } from '@prismicio/react'
-import { PrismicNextImage } from "@prismicio/next";
 
 const Files = ({ slice }) => {
-  console.log(slice)
   return(
     <div className='files' id="section">
       <p className='subtitle'>{slice.primary?.sub_title}</p>

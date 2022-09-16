@@ -4,7 +4,6 @@ import { PrismicNextImage } from "@prismicio/next";
 import Slider from "react-slick";
 
 const ImageSlider = ({ slice }) => {
-  console.log(slice)
   const settings = {
     dots: true,
     infinite: true,

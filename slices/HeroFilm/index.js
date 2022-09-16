@@ -3,6 +3,7 @@ import { PrismicRichText, PrismicLink } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const HeroFilm = ({ slice }) => {
+  console.log(slice)
   return(
     <div className='hero-film'>
       <div className={`hero-image ${slice.primary.height}`}>
@@ -22,7 +23,7 @@ const HeroFilm = ({ slice }) => {
             <div className='main-links'>
               {slice.items.map((item,i) => {
                 return(
-                  <a href={`#`}>
+                  <a href={item.link.url ? item.link.url : `/${item.link.uid}`}>
                     {item.label}
                   </a>
                 )
