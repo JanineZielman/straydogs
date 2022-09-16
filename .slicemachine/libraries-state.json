@@ -306,6 +306,13 @@
                     "placeholder": ""
                   }
                 },
+                "sub_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Sub Title",
+                    "placeholder": ""
+                  }
+                },
                 "embed": {
                   "type": "Text",
                   "config": {
@@ -339,8 +346,9 @@
               {}
             ],
             "primary": {
-              "title": "tried",
-              "embed": "sense",
+              "title": "around",
+              "sub_title": "grain",
+              "embed": "strip",
               "size": "big"
             },
             "slice_type": "embed"
@@ -472,7 +480,22 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "FilmInfo",
-              "primary": {},
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "sub_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Sub Title",
+                    "placeholder": ""
+                  }
+                }
+              },
               "items": {
                 "text": {
                   "type": "StructuredText",
@@ -480,7 +503,7 @@
                     "label": "Text",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item"
                   }
                 }
               },
@@ -497,13 +520,16 @@
                 "text": [
                   {
                     "type": "paragraph",
-                    "text": "Laboris excepteur aliqua consequat duis ut qui velit.",
+                    "text": "Quis quis laborum ullamco sit eu esse minim enim culpa sunt ullamco non incididunt nulla. Ex aliquip do irure velit est tempor ex officia mollit ex tempor. Aute excepteur aute et id anim.",
                     "spans": []
                   }
                 ]
               }
             ],
-            "primary": {},
+            "primary": {
+              "title": "bent",
+              "sub_title": "successful"
+            },
             "slice_type": "film_info"
           }
         },

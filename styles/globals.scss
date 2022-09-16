@@ -54,6 +54,12 @@ a{
 	line-height: 1;
 	text-decoration: none;
 }
+p{
+	a{
+		text-decoration: underline;
+		color: $green;
+	}
+}
 .big{
 	font-size: 70px;
 	line-height: 1;
@@ -262,6 +268,17 @@ footer{
 	}
 }
 
+.film-info-columns-wrapper{
+	padding: 48px 0;
+	.title {
+		font-weight: 300;
+		margin: 0;
+	}
+	p {
+		margin: 14px 0 0 0 0;
+	}
+}
+
 .film-info{
 	// min-height: 40vh;
 	padding: 24px 0;
@@ -343,6 +360,16 @@ footer{
 .subtitle{
 	margin: 0;
 	line-height: 1;
+}
+
+.embed{
+	h1 {
+		border-bottom: 1px solid white;
+		margin: 14px 0;
+	}
+	iframe{
+		margin-top: 14px;
+	}
 }
 
 .files {

@@ -6,8 +6,9 @@
       {}
     ],
     "primary": {
-      "title": "tried",
-      "embed": "sense",
+      "title": "around",
+      "sub_title": "grain",
+      "embed": "strip",
       "size": "big"
     },
     "slice_type": "embed"

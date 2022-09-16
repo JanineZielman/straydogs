@@ -18,6 +18,13 @@
             "placeholder": ""
           }
         },
+        "sub_title": {
+          "type": "Text",
+          "config": {
+            "label": "Sub Title",
+            "placeholder": ""
+          }
+        },
         "embed": {
           "type": "Text",
           "config": {

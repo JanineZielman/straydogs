@@ -3,14 +3,20 @@ import { PrismicRichText } from '@prismicio/react'
 
 const FilmInfo = ({ slice }) => {
   return(
-    <div className='film-info-columns' id="section">
-      {slice.items.map((item,i) => {
-        return(
-          <div className='film-info-column'>
-            <PrismicRichText field={item.text} />
-          </div>
-        )
-      })}
+    <div className='film-info-columns-wrapper' id="section">
+      <p className='subtitle'>{slice.primary?.sub_title}</p>
+      {slice.primary?.title &&
+        <h1 className='title'>{slice.primary?.title}</h1>
+      }
+      <div className='film-info-columns'>
+        {slice.items.map((item,i) => {
+          return(
+            <div className='film-info-column'>
+              <PrismicRichText field={item.text} />
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

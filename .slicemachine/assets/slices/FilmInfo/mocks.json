@@ -7,13 +7,16 @@
         "text": [
           {
             "type": "paragraph",
-            "text": "Laboris excepteur aliqua consequat duis ut qui velit.",
+            "text": "Quis quis laborum ullamco sit eu esse minim enim culpa sunt ullamco non incididunt nulla. Ex aliquip do irure velit est tempor ex officia mollit ex tempor. Aute excepteur aute et id anim.",
             "spans": []
           }
         ]
       }
     ],
-    "primary": {},
+    "primary": {
+      "title": "bent",
+      "sub_title": "successful"
+    },
     "slice_type": "film_info"
   }
 ]
