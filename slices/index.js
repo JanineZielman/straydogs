@@ -4,6 +4,7 @@ import BasicImage from './BasicImage';
 import BigText from './BigText';
 import Columns from './Columns';
 import Embed from './Embed';
+import Files from './Files';
 import FilmInfo from './FilmInfo';
 import FilmItem from './FilmItem';
 import Form from './Form';
@@ -20,6 +21,7 @@ export {
 	BigText,
 	Columns,
 	Embed,
+	Files,
 	FilmInfo,
 	FilmItem,
 	Form,
@@ -37,6 +39,7 @@ export const components = {
 	big_text: BigText,
 	columns: Columns,
 	embed: Embed,
+	files: Files,
 	film_info: FilmInfo,
 	film_item: FilmItem,
 	form: Form,

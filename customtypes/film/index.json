@@ -56,6 +56,9 @@
             },
             "image_slider": {
               "type": "SharedSlice"
+            },
+            "files": {
+              "type": "SharedSlice"
             }
           }
         }

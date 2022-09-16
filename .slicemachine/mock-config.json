@@ -232,6 +232,12 @@
       "default": {
         "primary": {}
       }
+    },
+    "Files": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
     }
   }
 }

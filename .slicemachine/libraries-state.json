@@ -358,6 +358,103 @@
           }
         }
       },
+      "files": {
+        "library": "slices",
+        "id": "files",
+        "name": "Files",
+        "description": "Files",
+        "model": {
+          "id": "files",
+          "type": "SharedSlice",
+          "name": "Files",
+          "description": "Files",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Files",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "sub_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Sub Title",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "file": {
+                  "type": "Link",
+                  "config": {
+                    "label": "File",
+                    "placeholder": "",
+                    "select": "media"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "download_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Download Label",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "file": {
+                  "link_type": "Media",
+                  "name": "mock",
+                  "kind": "image",
+                  "url": "https://source.unsplash.com/random",
+                  "size": "10kB"
+                },
+                "title": "wherever",
+                "download_label": "like"
+              }
+            ],
+            "primary": {
+              "title": "stopped",
+              "sub_title": "stronger"
+            },
+            "slice_type": "files"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/janinezielman/Documents/Sites/Prismic/straydogs/slices/Files/default/preview.png",
+            "width": 1503,
+            "height": 666
+          }
+        }
+      },
       "film_info": {
         "library": "slices",
         "id": "film_info",
