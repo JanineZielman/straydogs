@@ -80,6 +80,53 @@ a{
 	color: white;
 }
 
+.hamburger{
+	position: fixed;
+	right: 4vw;
+	top: 4vw;
+	width: 48px;
+	height: 48px;
+	mask-image: url('hamburger.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	background-color: white;
+	z-index: 1;
+}
+
+.close {
+	position: fixed;
+	right: 10vw;
+	top: 3vh;
+	font-size: 48px;
+	z-index: 8;
+}
+
+.ReactModal__Overlay{
+	z-index: 8;
+}
+
+.mobile-menu{
+	display: none;
+}
+
+.nav-links{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80vw;
+	margin: auto;
+	.language{
+		display: block;
+	}
+	.nav-item{
+		margin: 14px 0;
+	}
+	a{
+		font-size: 30px;
+	}
+}
+
 .navbar{
 	display: flex;
 	position: relative;

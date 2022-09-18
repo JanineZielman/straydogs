@@ -1,15 +1,9 @@
 import * as prismicH from "@prismicio/helpers";
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-
 import { linkResolver } from "../prismicio";
-import { Bounded } from "./Bounded";
 
-const FlagIcon = ({ lang }) => {
-  const code = lang.substring(3).toLowerCase();
-
-  return <span className={`fi fi-${code}`} />;
-};
+import { Menu } from "./Menu";
 
 export const Header = ({ alternateLanguages = [], navigation, settings }) => {
   return (
@@ -40,6 +34,11 @@ export const Header = ({ alternateLanguages = [], navigation, settings }) => {
         </PrismicLink>
       </div>
     ))}
+    <Menu 
+      alternateLanguages={alternateLanguages}
+      navigation={navigation}
+      settings={settings}
+    />
     </>
   );
 };
