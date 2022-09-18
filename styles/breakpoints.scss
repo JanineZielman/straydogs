@@ -1,0 +1,166 @@
+@media only screen and (max-width: 1500px) {
+	.team-section {
+		.team-item {
+			width: 47%;
+		}
+		.image {
+			height: 30vw;
+		}
+	}
+	.image-slider .image {
+		height: 50vh;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	h1 {
+		font-size: 42px;
+	}
+	
+	h2 {
+		font-size: 30px;
+	}
+	
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+	
+	p,
+	a,
+	li {
+		font-size: 16px;
+	}
+
+	.columns-section .columns .column h1{
+		font-size: 42px;
+	}
+
+	.navbar {
+		nav {
+			display: none;
+		}
+	}
+
+	.team-section {
+		.team-item {
+			margin-bottom: 48px;
+			width: 100%;
+			margin-right: 0;
+		}
+		.image {
+			height: 40vw;
+		}
+	}
+	.image-slider .image {
+		height: 40vh;
+	}
+}
+
+
+@media only screen and (max-width: 900px) {
+	h1{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.big{
+		font-size: 42px;
+	}
+	.container{
+		width: 92vw;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		margin-top: 14px;
+	}
+	.language{
+		display: none;
+	}
+	.navbar {
+		.logo{
+			width: 120px;
+			height: 80px;
+		}
+	}
+	.hero-image {
+		height: 35vh;
+		.img-wrapper{
+			width: 100vw;
+			height: 35vh;
+		}
+	}
+	.team-section {
+		.image {
+			height: 70vw;
+		}
+	}
+	.landing-page{
+		width: 100vw;
+		overflow: hidden;
+		.img-wrapper{
+			width: 100vw;
+		}
+		.intro{
+			margin-left: 4vw;
+		}
+	}
+	.film-items{
+		.film-item{
+			width: 100%;
+		}
+		.image {
+			height: 70vw;
+		}
+	} 
+	footer{
+		flex-direction: column;
+		padding-left: 4vw;
+		padding-bottom: 4vw;
+		h2{
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.columns-section {
+		padding: 24px 0;
+		.columns{
+			flex-direction: column;
+			.column{
+				width: 100%;
+				h1{
+					margin: 0;
+				}
+			}
+		}
+	}
+	.film-info-columns{
+		flex-direction: column;
+		.film-info-column{
+			width: 100%;
+		}
+	}
+	.image-text{
+		flex-direction: column;
+		.image{
+			width: 100%;
+			height: 70vh;
+		}
+		.text{
+			width: 100%;
+		}
+	}
+	.image-slider .image{
+		height: 25vh;
+	}
+	.partners-section{
+		.logos{
+			flex-wrap: wrap;
+		}
+	} 
+}

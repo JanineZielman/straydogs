@@ -162,7 +162,14 @@
     "TeamItem": {
       "default": {
         "primary": {},
-        "items": {}
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "FilmItem": {

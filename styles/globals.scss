@@ -636,3 +636,23 @@ iframe{
 		}
 	}
 }
+
+.Collapsible__trigger{
+	cursor: pointer;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	&:after{
+		content: "+";
+		font-size: 40px;
+	}
+}
+
+.team-section .team-item .inner-collapsible{
+	padding-top: 14px;
+	p{
+		font-size: 16px;
+		line-height: 1.3;
+	}
+}
