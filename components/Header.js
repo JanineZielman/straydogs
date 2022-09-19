@@ -27,13 +27,15 @@ export const Header = ({ alternateLanguages = [], navigation, settings }) => {
         ))}
       </nav>
     </div>
-    {alternateLanguages.map((lang) => (
-      <div key={lang.lang} className="language">
-        <PrismicLink href={linkResolver(lang)} locale={lang.lang}>
-          <span className="sr-only">{lang.lang.slice(0,2)}</span>
-        </PrismicLink>
-      </div>
-    ))}
+    {alternateLanguages.map((lang) => {
+      return(
+        <div key={lang.lang} className="language">
+          <PrismicLink href={linkResolver(lang)} locale={lang.lang}>
+            <span>{lang.lang.slice(0,2)}</span>
+          </PrismicLink>
+        </div>
+      )
+    })}
     <Menu 
       alternateLanguages={alternateLanguages}
       navigation={navigation}

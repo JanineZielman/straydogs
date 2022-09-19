@@ -7,6 +7,12 @@
 			height: 30vw;
 		}
 	}
+	.team-section .team-item:nth-child(3n){
+		margin-right: 3%;
+	}
+	.team-section .team-item:nth-child(2n){
+		margin-right: 0;
+	}
 	.image-slider .image {
 		height: 50vh;
 	}
@@ -44,6 +50,10 @@
 	a,
 	li {
 		font-size: 16px;
+	}
+
+	.container{
+		margin-top: 14px;
 	}
 
 	.columns-section .columns .column h1{
@@ -90,7 +100,6 @@
 		width: 92vw;
 		margin-left: 4vw;
 		margin-right: 4vw;
-		margin-top: 14px;
 	}
 	.language{
 		display: none;
