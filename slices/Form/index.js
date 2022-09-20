@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
 import { PrismicRichText } from '@prismicio/react'
 
-const Form = ({ slice }) => {
-  console.log(slice)
-  
+const Form = ({ slice }) => {  
   const [film, setFilm] = useState("");
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");

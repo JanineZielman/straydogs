@@ -874,6 +874,7 @@ iframe{
 			border-radius: 15px 15px 0 0;
 			iframe {
 				margin: 0;
+				filter: saturate(50%);
 			}
 		}
 		p, h3{
