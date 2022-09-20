@@ -47,9 +47,9 @@ export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
 							key={prismicH.asText(item.label)}
 							className="nav-item"
 						>
-							<PrismicLink field={item.link}>
+							<a href={item.link.uid}>
 								<PrismicText field={item.label} />
-							</PrismicLink>
+							</a>
 						</div>
 					))}
 					{alternateLanguages.map((lang) => (
