@@ -8,7 +8,6 @@ const Partners = ({ slice }) => {
       <h1>{slice.primary.title}</h1>
       <div className='logos'>
         {slice.items.map((item, i) => {
-          console.log(item)
           return(
             <a className='image tooltip' href={item.link?.url} target="_blank">
               <PrismicNextImage field={item.logo} layout="fill" />

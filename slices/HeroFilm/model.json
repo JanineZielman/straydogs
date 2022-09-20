@@ -74,6 +74,14 @@
             "label": "Read More Label",
             "placeholder": ""
           }
+        },
+        "read_more_link": {
+          "type": "Link",
+          "config": {
+            "label": "Read More Link",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "items": {

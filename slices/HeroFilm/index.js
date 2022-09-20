@@ -60,7 +60,7 @@ const HeroFilm = ({ slice }) => {
         <div className='img-wrapper'>
           <PrismicNextImage field={slice.primary.image} layout="fill" id="bgImg"/>
           <div className='iframe-wrapper'>
-            <iframe id="trailer" src={slice.primary.trailer.embed_url} width="640" height="360" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+            <iframe id="trailer" src={slice.primary.trailer.embed_url} width="640" height="360" frameBorder="0" allowFullScreen allow="autoplay; encrypted-media"></iframe>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ const HeroFilm = ({ slice }) => {
           <div className='extra-info'>
             <PrismicRichText field={slice.primary.info}/>
           </div>
-          {slice.items[0].label &&
+          {slice.items[0]?.label &&
             <div className='main-links'>
               {slice.items.map((item,i) => {
                 return(
@@ -83,12 +83,30 @@ const HeroFilm = ({ slice }) => {
             </div>
           }
           <div className='film-links'>
-            <a href={`#`} className="play-button" onClick={playTrailer}>
-              {slice.primary.play_label}
-            </a>
-            <a href={`#section`}>
-              {slice.primary.read_more_label}
-            </a>
+            {slice.primary.trailer?.embed_url &&
+              <a href={`#`} className="play-button" onClick={playTrailer}>
+                {slice.primary.play_label}
+              </a>
+            }
+            {slice.primary.play_label && slice.primary.trailer?.embed_url == null &&
+              <a className="play-button">
+                {slice.primary.play_label}
+              </a>
+            }
+            {slice.primary.play_label && slice.primary.trailer?.embed_url == '' &&
+              <a className="play-button">
+                {slice.primary.play_label}
+              </a>
+            }
+            {slice.primary.read_more_link ?
+              <PrismicLink field={slice.primary.read_more_link}>
+                {slice.primary.read_more_label}
+              </PrismicLink>
+            :
+              <a href={slice.primary.read_more_link ? `` : `#section`}>
+                {slice.primary.read_more_label}
+              </a>
+            }
           </div>
           
         </div>
