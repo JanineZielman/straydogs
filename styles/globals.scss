@@ -857,3 +857,74 @@ iframe{
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 }
+
+.form-section{
+	padding: 48px 0;
+	h1{
+		border-bottom: 1px solid white;
+	}
+	.form-wrapper{
+		display: flex;
+		justify-content: space-between;
+		.info{
+			width: 45%;
+		}
+		.map{
+			overflow: hidden;
+			border-radius: 15px 15px 0 0;
+			iframe {
+				margin: 0;
+			}
+		}
+		p, h3{
+			margin-top: 0;
+		}
+		.form{
+			width: 45%;
+			div{
+				margin-bottom: 24px;
+			}
+			button{
+				border: none;
+				background-color: black;
+				color: white;
+				font-size: 30px;
+				width: 100%;
+				text-align: right;
+				cursor: pointer;
+			}
+			label{
+				width: 100%;
+				color: $green;
+				font-size: 16px;
+			}
+			input{
+				width: 100%;
+				background-color: transparent;
+				border: none;
+				border-bottom: 1px solid white;
+				color: white;
+				margin-top: 10px;
+				font-size: 20px;
+			}
+			textarea{
+				width: 100%;
+				background-color: transparent;
+				border: none;
+				border-bottom: 1px solid white;
+				min-height: 150px;
+				color: white;
+				margin-top: 10px;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
