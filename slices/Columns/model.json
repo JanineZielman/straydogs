@@ -45,7 +45,7 @@
             "label": "Column 1",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,list-item,o-list-item,heading1"
           }
         },
         "column_1_small_text": {

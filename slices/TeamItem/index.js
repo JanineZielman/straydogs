@@ -16,7 +16,9 @@ const TeamItem = ({ slice }) => {
               </div>
               <div className='icons'>
                 {item.phone &&
-                  <a className='icon phone' href={`tel:${item.phone}`}></a>
+                  <a className='icon phone tooltip' href={`tel:${item.phone}`}>
+                    <div class="tooltiptext"><span>{item.phone}</span></div>
+                  </a>
                 }
                 {item.mail &&
                   <a className='icon mail' href={`mailto:${item.mail}`}></a>

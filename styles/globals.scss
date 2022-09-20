@@ -780,34 +780,80 @@ iframe{
 .icons{
 	width: 100%;
 	display: flex;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	position: relative;
 }
 .icon{
-	width: 18px;
-	height: 18px;
+	position: relative;
 	margin-right: 14px;
-	background-color: white;
+	min-width: 18px;
+	min-height: 18px;
+	&:after{
+		content: " ";
+		background-color: white;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+	}
 	cursor: pointer;
 	&:hover{
-		background-color: $green;
+		&:after {
+			background-color: $green;
+		}
 	}
 }
 
-.phone{
+.phone:after{
 	mask-image: url('phone.svg');
 	mask-repeat: no-repeat;
 	mask-size: contain;
 }
 
-.mail {
+.mail:after{
 	mask-image: url('mail.svg');
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	margin-top: 2px;
 }
 
-.web {
+.web:after {
 	mask-image: url('web.svg');
 	mask-repeat: no-repeat;
 	mask-size: contain;
+}
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	min-width: 18px;
+	min-height: 18px;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 100%;
+	// background-color: black;
+	// color: #fff;
+	text-align: center;
+	border: none!important;
+	padding: 5px;
+	top: -35px;
+	position: absolute;
+	white-space: nowrap;
+
+	z-index: 1;
+	border: 1px solid;
+	font-size: 16px;
+
+	span{
+		background-color: black;
+		height: 18px;
+		padding: 5px 10px;
+		border-radius: 6px;
+	}
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
