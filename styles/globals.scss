@@ -286,6 +286,10 @@ footer{
 		// margin-top: 24px;
 		padding-top: 10px;
 		border-top: 1px solid white;
+		font-size: 16px;
+		li, p{
+			font-size: 16px;
+		}
 		strong{
 			color: $green;
 		}
@@ -734,6 +738,7 @@ iframe{
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
+	line-height: 1;
 	&:after{
 		content: "+";
 		font-size: 40px;
@@ -770,4 +775,39 @@ iframe{
 			}
 		}
 	}
+}
+
+.icons{
+	width: 100%;
+	display: flex;
+	margin-bottom: 5px;
+}
+.icon{
+	width: 18px;
+	height: 18px;
+	margin-right: 14px;
+	background-color: white;
+	cursor: pointer;
+	&:hover{
+		background-color: $green;
+	}
+}
+
+.phone{
+	mask-image: url('phone.svg');
+	mask-repeat: no-repeat;
+	mask-size: contain;
+}
+
+.mail {
+	mask-image: url('mail.svg');
+	mask-repeat: no-repeat;
+	mask-size: contain;
+	margin-top: 2px;
+}
+
+.web {
+	mask-image: url('web.svg');
+	mask-repeat: no-repeat;
+	mask-size: contain;
 }

@@ -4,7 +4,6 @@ import { PrismicNextImage } from "@prismicio/next";
 import Collapsible from 'react-collapsible';
 
 const TeamItem = ({ slice }) => {
-  console.log(slice)
   return(
     <div className='team-section' id="section">
       <h1>{slice.primary.title}</h1>
@@ -14,6 +13,17 @@ const TeamItem = ({ slice }) => {
             <div className="team-item">
               <div className='image'>
                 <PrismicNextImage field={item.image} layout="fill" />
+              </div>
+              <div className='icons'>
+                {item.phone &&
+                  <a className='icon phone' href={`tel:${item.phone}`}></a>
+                }
+                {item.mail &&
+                  <a className='icon mail' href={`mailto:${item.mail}`}></a>
+                }
+                {item.website.url &&
+                  <a className='icon web' href={item.website.url} target="_blank"></a>
+                }
               </div>
               <p className='green'>{item.jobdescription}</p>
               <h3>

@@ -3,16 +3,6 @@ import { PrismicRichText, PrismicLink } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const HeroFilm = ({ slice }) => {
-  console.log(slice)
-  // useEffect(() => {
-  //   const iframe = document.getElementById('trailer');
-  //   const player = new Vimeo.Player(iframe);
-
-  //   player.on('play', function() {
-  //       console.log('played the video!');
-  //   });
-    
-  // }, []);
 
   function playTrailer(){
     const iframe = document.getElementById('trailer');
