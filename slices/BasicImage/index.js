@@ -6,7 +6,7 @@ const BasicImage = ({ slice }) => {
   return(
     <div className='basic-image' id="section">
       {slice.primary.title &&
-        <h1>{slice.primary.title}</h1>
+        <h1 id={slice.primary.sectionid}>{slice.primary.title}</h1>
       }
       <div className={`image ${slice.primary.size}`}>
         <PrismicNextImage field={slice.primary.image} layout="fill" />

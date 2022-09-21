@@ -6,10 +6,11 @@
       {}
     ],
     "primary": {
-      "title": "around",
-      "sub_title": "grain",
-      "embed": "strip",
-      "size": "big"
+      "sectionid": "locate",
+      "title": "agree",
+      "sub_title": "morning",
+      "embed": "am",
+      "size": "small"
     },
     "slice_type": "embed"
   }

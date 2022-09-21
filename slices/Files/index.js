@@ -5,9 +5,9 @@ const Files = ({ slice }) => {
     <div className='files' id="section">
       <p className='subtitle'>{slice.primary?.sub_title}</p>
       {slice.primary?.title &&
-        <h1 className='title'>{slice.primary?.title}</h1>
+        <h1 className='title' id={slice.primary.sectionid}>{slice.primary?.title}</h1>
       }
-      <div className='wrapper'>
+      <div className='wrapper' id={slice.primary.sectionid}>
         {slice.items.map((item, i) => {
           return(
             <a className='file-item' href={`${item.file?.url}`} target="_blank">

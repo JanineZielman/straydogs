@@ -11,6 +11,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ImageSlider",
       "primary": {
+        "sectionid": {
+          "type": "Text",
+          "config": {
+            "label": "SectionID",
+            "placeholder": ""
+          }
+        },
         "title": {
           "type": "Text",
           "config": {

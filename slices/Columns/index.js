@@ -5,7 +5,7 @@ const Columns = ({ slice }) => {
   return(
     <div className='columns-section' id="section">
       {slice.primary?.title &&
-        <h1 className='title'>{slice.primary?.title}</h1>
+        <h1 className='title' id={slice.primary.sectionid}>{slice.primary?.title}</h1>
       }
       {slice.items.map((item, i) => {
         return(

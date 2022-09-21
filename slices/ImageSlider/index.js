@@ -14,7 +14,7 @@ const ImageSlider = ({ slice }) => {
   };
   return(
     <div className='image-slider' id="section">
-      <h1>{slice.primary.title}</h1>
+      <h1 id={slice.primary.sectionid}>{slice.primary.title}</h1>
        <Slider {...settings}>
           {slice.items.map((item,i) => {
             return(

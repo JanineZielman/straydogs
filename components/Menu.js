@@ -60,7 +60,7 @@ export const Menu = ({ alternateLanguages = [], navigation, settings, page }) =>
 					))}
 					{alternateLanguages.map((lang) => (
 						<div key={lang.lang} className="language">
-							<a href={linkResolver(lang)} locale={lang.lang}>
+							<a href={linkResolver(lang)}>
 								<span className="sr-only">{lang.lang.slice(0,2)}</span>
 							</a>
 						</div>

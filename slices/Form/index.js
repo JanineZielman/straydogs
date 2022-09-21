@@ -14,7 +14,7 @@ const Form = ({ slice }) => {
   }
   return(
     <div className='form-section' id="section">
-      <h1 className='title'>{slice.primary.title}</h1>
+      <h1 className='title' id={slice.primary.sectionid}>{slice.primary.title}</h1>
       <div className='form-wrapper'>
         <div className='info'>
           <PrismicRichText field={slice.primary.text}/>

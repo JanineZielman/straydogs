@@ -50,7 +50,7 @@ export const Header = ({ alternateLanguages = [], navigation, settings, page }) 
     {alternateLanguages.map((lang) => {
       return(
         <div key={lang.lang} className="language">
-          <a href={linkResolver(lang)} locale={lang.lang}>
+          <a href={linkResolver(lang)}>
             <span>{lang.lang.slice(0,2)}</span>
           </a>
         </div>

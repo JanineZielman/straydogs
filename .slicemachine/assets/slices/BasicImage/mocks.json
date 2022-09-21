@@ -6,7 +6,8 @@
       {}
     ],
     "primary": {
-      "title": "volume",
+      "sectionid": "change",
+      "title": "industrial",
       "image": {
         "dimensions": {
           "width": 900,
@@ -14,7 +15,7 @@
         },
         "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+        "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
       }
     },
     "slice_type": "basic_image"
