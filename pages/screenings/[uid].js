@@ -12,6 +12,7 @@ const Page = ({ page, navigation, settings }) => {
       alternateLanguages={page.alternate_languages}
       navigation={navigation}
       settings={settings}
+      page={page}
     >
       <Head>
         <title>

@@ -5,6 +5,7 @@ export const Layout = ({
   alternateLanguages,
   navigation,
   settings,
+  page,
   children,
 }) => {
   return (
@@ -13,6 +14,7 @@ export const Layout = ({
         alternateLanguages={alternateLanguages}
         navigation={navigation}
         settings={settings}
+        page={page}
       />
       <main>{children}</main>
       <Footer settings={settings} />

@@ -6,7 +6,7 @@ import Modal from 'react-modal';
 
 import { linkResolver } from "../prismicio";
 
-export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
+export const Menu = ({ alternateLanguages = [], navigation, settings, page }) => {
 
 	const customStyles = {
 		content: {
@@ -53,16 +53,16 @@ export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
 							key={prismicH.asText(item.label)}
 							className="nav-item"
 						>
-							<PrismicLink field={item.link} onClick={closeAfterClick}>
+							<a href={`/${page.lang}/${item.link.uid}`}>
 								<PrismicText field={item.label} />
-							</PrismicLink>
+							</a>
 						</div>
 					))}
 					{alternateLanguages.map((lang) => (
 						<div key={lang.lang} className="language">
-							<PrismicLink href={linkResolver(lang)} locale={lang.lang}>
+							<a href={linkResolver(lang)} locale={lang.lang}>
 								<span className="sr-only">{lang.lang.slice(0,2)}</span>
-							</PrismicLink>
+							</a>
 						</div>
 					))}
 				</div>

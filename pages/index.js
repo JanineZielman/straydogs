@@ -8,13 +8,13 @@ import { createClient } from "../prismicio";
 import { components } from "../slices/";
 import { Layout } from "../components/Layout";
 
-const Index = ({ page, navigation, settings }) => {
-
+const Index = ({ page, navigation, settings}) => {
   return (
     <Layout
       alternateLanguages={page.alternate_languages}
       navigation={navigation}
       settings={settings}
+      page={page}
     >
       <Head>
         <title>{prismicH.asText(page.data.title)}</title>

@@ -929,3 +929,25 @@ textarea:focus,
 button:focus {
 	outline: none;
 }
+
+
+.sidebar-wrapper {
+	width: 120px;
+	height: calc(100vh - 250px);
+	position: fixed;
+	top: 150px;
+}
+
+.sidebar {
+	width: calc(100vh - 250px);
+	transform-origin: left;
+	transform: rotate(90deg);
+	margin-left: 3vw;
+	margin-top: -24px;
+	display: flex;
+	justify-content: center;
+
+	a {
+		margin: 0 3vh;
+	}
+}

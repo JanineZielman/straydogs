@@ -6,12 +6,13 @@ import { createClient } from "../prismicio";
 import { components } from "../slices";
 import { Layout } from "../components/Layout";
 
-const Page = ({ page, navigation, settings }) => {
+const Page = ({ page, navigation, settings}) => {
   return (
     <Layout
       alternateLanguages={page.alternate_languages}
       navigation={navigation}
       settings={settings}
+      page={page}
     >
       <Head>
         <title>

@@ -1,15 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { PrismicRichText, PrismicLink } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const FilmItem = ({ slice }) => {
   return(
     <div className='film-items' id="section">
-      <h1>{slice.primary.title}</h1>
+      <h1 id={slice.primary.sectionid}>{slice.primary.title}</h1>
       <div className='wrapper'>
-        {slice.items.map((item, i) => {
+        {slice.items.map((item) => {
           return(
-            <PrismicLink className='film-item' href={item.link?.uid ? `/films/${item.link?.uid}` : `${item.link?.url}`}>
+            <PrismicLink key={item.title} className='film-item' href={item.link?.uid ? `/films/${item.link?.uid}` : `${item.link?.url}`}>
               <div className='image'>
                 <PrismicNextImage field={item.image} layout="fill" />
               </div>

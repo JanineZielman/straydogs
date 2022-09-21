@@ -1,13 +1,33 @@
 import * as prismicH from "@prismicio/helpers";
+import React, {useEffect, useState} from 'react'
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import { linkResolver } from "../prismicio";
 
 import { Menu } from "./Menu";
 
-export const Header = ({ alternateLanguages = [], navigation, settings }) => {
+export const Header = ({ alternateLanguages = [], navigation, settings, page }) => {
+  const [sections, setSections] = useState([]); 
+  useEffect(() => {
+    const array = Array.prototype.slice.call(document.querySelectorAll("h1"))
+    setSections(array);
+  }, []);
+
   return (
     <>
+    <div className="sidebar-wrapper">
+      <div className="sidebar">
+        {sections?.map((item, i) => {
+          return(
+            <div key={item.id}>
+              {item.id &&
+                <a href={`#${item.id}`}>{item.id}</a>
+              }
+            </div>
+          )
+        })}
+      </div>
+    </div>
     <div className="navbar">
       <PrismicLink href="/">
         {prismicH.isFilled.image(settings.data.logo) && (
@@ -20,9 +40,9 @@ export const Header = ({ alternateLanguages = [], navigation, settings }) => {
             key={prismicH.asText(item.label)}
             className="nav-item"
           >
-            <PrismicLink field={item.link}>
+            <a href={`/${page.lang}/${item.link.uid}`}>
               <PrismicText field={item.label} />
-            </PrismicLink>
+            </a>
           </div>
         ))}
       </nav>
@@ -30,9 +50,9 @@ export const Header = ({ alternateLanguages = [], navigation, settings }) => {
     {alternateLanguages.map((lang) => {
       return(
         <div key={lang.lang} className="language">
-          <PrismicLink href={linkResolver(lang)} locale={lang.lang}>
+          <a href={linkResolver(lang)} locale={lang.lang}>
             <span>{lang.lang.slice(0,2)}</span>
-          </PrismicLink>
+          </a>
         </div>
       )
     })}
@@ -40,6 +60,7 @@ export const Header = ({ alternateLanguages = [], navigation, settings }) => {
       alternateLanguages={alternateLanguages}
       navigation={navigation}
       settings={settings}
+      page={page}
     />
     </>
   );

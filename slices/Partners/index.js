@@ -11,7 +11,7 @@ const Partners = ({ slice }) => {
           return(
             <a className='image tooltip' href={item.link?.url} target="_blank">
               <PrismicNextImage field={item.logo} layout="fill" />
-              {item.tooltip &&<div class="tooltiptext"><span>{item.tooltip}</span></div>}
+              {item.tooltip &&<div className="tooltiptext"><span>{item.tooltip}</span></div>}
             </a>
           )
         })}
