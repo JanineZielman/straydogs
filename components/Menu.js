@@ -1,12 +1,13 @@
 import * as prismicH from "@prismicio/helpers";
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import React from "react";
+import React, {useEffect} from "react";
 import Modal from 'react-modal';
 
 import { linkResolver } from "../prismicio";
 
 export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
+
 	const customStyles = {
 		content: {
 			top: '50%',
@@ -21,6 +22,7 @@ export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
 			zIndex: '999',
 		},
 	};
+
 	const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -31,6 +33,10 @@ export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
   function closeModal() {
     setIsOpen(false);
   }
+
+	function closeAfterClick(){
+		setTimeout(setIsOpen(false), 3000);
+	}
 
   return (
     <div className="mobile-menu">
@@ -47,9 +53,9 @@ export const Menu = ({ alternateLanguages = [], navigation, settings }) => {
 							key={prismicH.asText(item.label)}
 							className="nav-item"
 						>
-							<a href={item.link.uid}>
+							<PrismicLink field={item.link} onClick={closeAfterClick}>
 								<PrismicText field={item.label} />
-							</a>
+							</PrismicLink>
 						</div>
 					))}
 					{alternateLanguages.map((lang) => (
