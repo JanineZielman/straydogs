@@ -19,6 +19,15 @@ const nextConfig = async () => {
       // a non-locale prefixed path e.g. `/hello`
       defaultLocale: locales[0],
     },
+    redirects() {
+      return [
+        {
+          source: '/about-us.html',
+          destination: '/about-us',
+          permanent: true,
+        },
+    ]
+  },
   };
 };
 
