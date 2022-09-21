@@ -6,7 +6,7 @@ const ImageText = ({ slice }) => {
   return(
     <div className='image-text' id="section">
       <div className='image'>
-        <PrismicNextImage field={slice.primary.image} layout="fill" />
+        <PrismicNextImage field={slice.primary.image} layout="responsive" />
       </div>
       <div className='text'>
         <PrismicRichText field={slice.primary.text} />

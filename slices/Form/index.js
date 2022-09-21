@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { PrismicRichText } from '@prismicio/react'
+import { PrismicNextImage } from "@prismicio/next";
 
 const Form = ({ slice }) => {  
   const [film, setFilm] = useState("");
@@ -18,7 +19,13 @@ const Form = ({ slice }) => {
       <div className='form-wrapper'>
         <div className='info'>
           <PrismicRichText field={slice.primary.text}/>
-          <div className="map" dangerouslySetInnerHTML={{ __html: slice.primary.map_embed }} />
+          {slice.primary.map_embed ?
+            <div className="map" dangerouslySetInnerHTML={{ __html: slice.primary.map_embed }} />
+          :
+            <div className='map'>
+              <PrismicNextImage field={slice.primary.image} layout="responsive"/>
+            </div>
+          }
         </div>
         <div className='form'>
           <h3>Contact Form</h3>

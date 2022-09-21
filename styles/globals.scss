@@ -19,6 +19,8 @@ $red: rgba(255,0,0,0.35);
 
 html, body{
 	scroll-behavior: smooth;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 body{
@@ -684,9 +686,11 @@ iframe{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 	.image {
 		width: 30%;
-		height: 80vh;
+		height: auto;
+		// height: 80vh;
 		position: relative;
 		margin-bottom: 14px;
 
@@ -881,12 +885,14 @@ iframe{
 	.form-wrapper{
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 		.info{
 			width: 45%;
 		}
 		.map{
 			overflow: hidden;
 			border-radius: 15px 15px 0 0;
+			position: relative;
 			iframe {
 				margin: 0;
 				filter: saturate(50%);
@@ -951,6 +957,7 @@ button:focus {
 	height: calc(100vh - 250px);
 	position: fixed;
 	top: 150px;
+	z-index: 999;
 }
 
 .sidebar {
