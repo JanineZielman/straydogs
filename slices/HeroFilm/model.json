@@ -54,6 +54,18 @@
             "default_value": "big"
           }
         },
+        "vertical_position": {
+          "type": "Select",
+          "config": {
+            "label": "Vertical Position",
+            "placeholder": "",
+            "options": [
+              "top",
+              "middle",
+              "bottom"
+            ]
+          }
+        },
         "trailer": {
           "type": "Embed",
           "config": {

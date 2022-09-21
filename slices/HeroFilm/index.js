@@ -57,7 +57,7 @@ const HeroFilm = ({ slice }) => {
   return(
     <div className='hero-film'>
       <div className={`hero-image ${slice.primary.height}`} onClick={stopTrailer} id="heroImg">
-        <div className='img-wrapper'>
+        <div className={`img-wrapper ${slice.primary.vertical_position}`}>
           <PrismicNextImage field={slice.primary.image} layout="fill" id="bgImg"/>
           <div className='iframe-wrapper'>
             <iframe id="trailer" src={slice.primary.trailer.embed_url} width="640" height="360" frameBorder="0" allowFullScreen allow="autoplay; encrypted-media"></iframe>
