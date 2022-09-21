@@ -263,6 +263,21 @@ footer{
 			border-radius: 0 0 0 15px;
 			filter: brightness(50%);
 		}
+		&.top{
+			img{
+				object-position: top;
+			}
+		}
+		&.middle {
+			img {
+				object-position: center;
+			}
+		}
+		&.bottom {
+			img {
+				object-position: bottom;
+			}
+		}
 	}
 }
 

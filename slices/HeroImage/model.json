@@ -31,6 +31,18 @@
             ],
             "default_value": "small"
           }
+        },
+        "vertical_position": {
+          "type": "Select",
+          "config": {
+            "label": "Vertical Position",
+            "placeholder": "",
+            "options": [
+              "top",
+              "middle",
+              "bottom"
+            ]
+          }
         }
       },
       "items": {},
