@@ -12,6 +12,7 @@
 
 $green: #C4E31C;
 $red: rgba(255,0,0,0.35); 
+$black: rgb(20,20,20);
 
 .green{
 	color: #C4E31C;
@@ -24,7 +25,7 @@ html, body{
 }
 
 body{
-	background-color: black;
+	background-color: $black;
 	color: white;
 	font-family: Monument;
 	margin: 0;
@@ -35,16 +36,16 @@ body{
 
 h1{
 	font-size: 52px;
-	font-weight: 300;
+	font-weight: 400;
 }
 h2 {
 	font-size: 40px;
-	font-weight: 300;
+	font-weight: 400;
 }
 h3{
 	font-size: 30px;
 	font-family: Monument-mono;
-	font-weight: 300;
+	font-weight: 400;
 }
 h4{
 	font-size: 20px;
@@ -64,6 +65,9 @@ p{
 	a{
 		text-decoration: underline;
 		color: $green;
+	}
+	strong{
+		font-weight: 600;
 	}
 }
 .big{
@@ -268,7 +272,7 @@ footer{
 			height: 100%;
 			object-fit: cover;
 			border-radius: 0 0 0 15px;
-			filter: brightness(50%);
+			filter: brightness(75%);
 		}
 		&.top{
 			img{
@@ -299,7 +303,7 @@ footer{
 	.title{
 		border-bottom: 1px solid white;
 		margin: 0;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	h3{
 		margin-bottom: 0px;
@@ -355,7 +359,7 @@ footer{
 .film-info-columns-wrapper{
 	padding: 48px 0;
 	.title {
-		font-weight: 300;
+		font-weight: 400;
 		margin: 0;
 	}
 	p {
@@ -637,7 +641,7 @@ footer{
 		border-bottom: 1px solid white;
 	}
 	.logos{
-		background-color: white;
+		// background-color: white;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -775,9 +779,16 @@ iframe{
 
 .team-section .team-item .inner-collapsible{
 	padding-top: 14px;
+	font-family: Monument;
 	p{
 		font-size: 16px;
 		line-height: 1.4;
+		font-weight: 400;
+		a{
+			font-size: 16px;
+			line-height: 1.4;
+			font-weight: 400;
+		}
 	}
 }
 
@@ -861,7 +872,7 @@ iframe{
 .tooltip .tooltiptext {
 	visibility: hidden;
 	width: 100%;
-	// background-color: black;
+	// background-color: $black;
 	// color: #fff;
 	text-align: center;
 	border: none!important;
@@ -875,7 +886,7 @@ iframe{
 	font-size: 16px;
 
 	span{
-		background-color: black;
+		background-color: $black;
 		height: 18px;
 		padding: 5px 10px;
 		border-radius: 6px;
@@ -917,16 +928,20 @@ iframe{
 			}
 			button{
 				border: none;
-				background-color: black;
+				background-color: $black;
 				color: white;
 				font-size: 30px;
 				width: 100%;
 				text-align: right;
 				cursor: pointer;
+				transition: color 0.4s ease-in-out;
+				&:hover{
+					color: $green;
+				}
 			}
 			label{
 				width: 100%;
-				color: $green;
+				// color: $green;
 				font-size: 16px;
 			}
 			input{
@@ -934,7 +949,7 @@ iframe{
 				background-color: transparent;
 				border: none;
 				border-bottom: 1px solid white;
-				color: white;
+				color: $green;
 				margin-top: 10px;
 				font-size: 20px;
 			}
@@ -944,9 +959,10 @@ iframe{
 				border: none;
 				border-bottom: 1px solid white;
 				min-height: 150px;
-				color: white;
+				color: $green;
 				margin-top: 10px;
 				font-size: 20px;
+				font-family: Monument;
 			}
 		}
 	}

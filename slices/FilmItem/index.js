@@ -13,8 +13,8 @@ const FilmItem = ({ slice }) => {
               <div className='image'>
                 <PrismicNextImage field={item.image} layout="fill" />
               </div>
-              <p className='green'>{item.year}</p>
               <h3>{item.title}</h3>
+              <p className='green'>{item.year}</p>
             </PrismicLink>
           )
         })}
