@@ -170,13 +170,18 @@ footer{
 	justify-content: space-between;
 	padding-left: 140px;
 	padding-right: 2vw;
+	padding: 24px 2vw 24px 140px;
+	align-items: flex-end;
+	h2, p{
+		margin: 0;
+	}
 }
 
 .language{
 	position: fixed;
 	left: 0;
-	bottom: 5vh;
-	width: 125px;
+	bottom: 24px;
+	width: 95px;
 	text-align: center;
 	a{
 		font-size: 28px;
