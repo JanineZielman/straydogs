@@ -89,7 +89,7 @@ a{
 .hamburger{
 	position: fixed;
 	right: 4vw;
-	top: 4vw;
+	top: 24px;
 	width: 48px;
 	height: 48px;
 	mask-image: url('hamburger.svg');
@@ -111,6 +111,8 @@ a{
 	z-index: 8;
 	.language{
 		bottom: 10vh; 
+		left: 15vw;
+		width: auto;
 	}
 }
 
@@ -771,6 +773,9 @@ iframe{
 		content: "+";
 		font-size: 40px;
 	}
+	&.is-open:after {
+		content: "-";
+	}
 	transition: color 0.3s ease-in-out;
 	&:hover{
 		color: $green;
@@ -997,4 +1002,9 @@ button:focus {
 	a {
 		margin: 0 3vh;
 	}
+}
+
+
+.active {
+	color: $green!important;
 }

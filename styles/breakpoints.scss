@@ -124,8 +124,10 @@
 	}
 	.navbar {
 		.logo{
-			width: 120px;
-			height: 80px;
+			width: 140px;
+			height: 100px;
+			margin-left: -5px;
+			margin-top: -8px;
 		}
 	}
 	.hero-image {
@@ -165,8 +167,10 @@
 		flex-direction: column;
 		padding-left: 4vw;
 		padding-bottom: 4vw;
+		align-items: flex-start;
 		h2{
-			margin: 0;
+			margin-top: 24px;
+			margin-bottom: 24px;
 		}
 	}
 }

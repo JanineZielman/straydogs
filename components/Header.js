@@ -3,10 +3,12 @@ import React, {useEffect, useState} from 'react'
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import { linkResolver } from "../prismicio";
+import { useRouter } from "next/router";
 
 import { Menu } from "./Menu";
 
 export const Header = ({ alternateLanguages = [], navigation, settings, page }) => {
+  const router = useRouter();
   const [sections, setSections] = useState([]); 
   useEffect(() => {
     const array = Array.prototype.slice.call(document.querySelectorAll("h1"))
@@ -35,16 +37,18 @@ export const Header = ({ alternateLanguages = [], navigation, settings, page }) 
         )}
       </PrismicLink>
       <nav>
-        {navigation.data?.links.map((item) => (
-          <div
-            key={prismicH.asText(item.label)}
-            className="nav-item"
-          >
-            <a href={`/${page.lang}/${item.link.uid}`}>
-              <PrismicText field={item.label} />
-            </a>
-          </div>
-        ))}
+        {navigation.data?.links.map((item) => {
+          return(
+            <div
+              key={prismicH.asText(item.label)}
+              className="nav-item"
+            >
+              <a href={`/${page.lang}/${item.link.uid}`} className={router.asPath.split("/")[1] == `${item.link.uid}` ? "active" : ""}>
+                <PrismicText field={item.label} />
+              </a>
+            </div>
+          )
+        })}
       </nav>
     </div>
     {alternateLanguages.map((lang) => {
