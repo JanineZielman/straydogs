@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"sectionid":"several","title":"quick","text":[{"type":"paragraph","text":"Est ad occaecat in tempor pariatur eiusmod sit dolore reprehenderit tempor ut aute velit. Esse sint tempor incididunt minim. Tempor amet enim ipsum irure non nostrud anim fugiat minim exercitation.","spans":[]}],"map_embed":"private","image":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"}},"slice_type":"form","id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"sectionid":"beauty","title":"develop","text":[{"type":"paragraph","text":"Esse sunt pariatur do tempor dolore id consequat officia pariatur nostrud occaecat duis.","spans":[]}],"map_embed":"somebody","image":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1600804931749-2da4ce26c869"},"film_label":"tried","name_label":"gravity","mail_label":"most","organization_label":"blanket","message_label":"bat"},"slice_type":"form","id":"_Default"}} />
 _Default.storyName = ''

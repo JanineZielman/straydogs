@@ -31,7 +31,7 @@ const Form = ({ slice }) => {
           <h3>Contact Form</h3>
           <form onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="film">Film:</label>
+              <label htmlFor="film">{slice.primary.film_label ? slice.primary.film_label : 'Film:'}</label>
               <input type="text" name="film" value={film}
                 onChange={(e) => {
                   setFilm(e.target.value);
@@ -40,7 +40,7 @@ const Form = ({ slice }) => {
             </div>
 
             <div>
-              <label htmlFor="fullname">Full Name:</label>
+              <label htmlFor="fullname">{slice.primary.name_label ? slice.primary.name_label : 'Full Name:' }</label>
               <input type="text" name="fullname" value={fullname}
                 onChange={(e) => {
                   setFullname(e.target.value);
@@ -49,7 +49,7 @@ const Form = ({ slice }) => {
             </div>
 
             <div>
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email">{slice.primary.mail_label ? slice.primary.mail_label : 'Email:' }</label>
               <input type="text" name="email" value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -58,7 +58,7 @@ const Form = ({ slice }) => {
             </div>
 
             <div>
-              <label htmlFor="organization">Organization:</label>
+              <label htmlFor="organization">{slice.primary.organization_label ? slice.primary.organization_label : 'Organization:' }</label>
               <input type="text" name="organization" value={organization}
                 onChange={(e) => {
                   setOrganization(e.target.value);
@@ -67,7 +67,7 @@ const Form = ({ slice }) => {
             </div>
 
             <div>
-              <label htmlFor="message">Message:</label>
+              <label htmlFor="message">{slice.primary.message_label ? slice.primary.message_label : 'Message:' }</label>
               <textarea type="text" name="message" value={message}
                 onChange={(e) => {
                   setMessage(e.target.value);

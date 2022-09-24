@@ -75,7 +75,7 @@ const HeroFilm = ({ slice }) => {
             <div className='main-links'>
               {slice.items.map((item,i) => {
                 return(
-                  <a href={item.link.url ? item.link.url : `/${item.link.uid}`} target={item.link.url && '_blank'}>
+                  <a href={item.link.url ? item.link.url : `/${item.link.lang}/${item.link.uid}`} target={item.link.url && '_blank'}>
                     {item.label}
                   </a>
                 )

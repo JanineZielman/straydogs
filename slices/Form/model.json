@@ -48,6 +48,41 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "film_label": {
+          "type": "Text",
+          "config": {
+            "label": "Film Label",
+            "placeholder": ""
+          }
+        },
+        "name_label": {
+          "type": "Text",
+          "config": {
+            "label": "Name Label",
+            "placeholder": ""
+          }
+        },
+        "mail_label": {
+          "type": "Text",
+          "config": {
+            "label": "Mail Label",
+            "placeholder": ""
+          }
+        },
+        "organization_label": {
+          "type": "Text",
+          "config": {
+            "label": "Organization Label",
+            "placeholder": ""
+          }
+        },
+        "message_label": {
+          "type": "Text",
+          "config": {
+            "label": "Message Label",
+            "placeholder": ""
+          }
         }
       },
       "items": {},
