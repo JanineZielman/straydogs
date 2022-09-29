@@ -11,13 +11,7 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "title": [
-      {
-        "type": "heading1",
-        "text": "Start",
-        "spans": []
-      }
-    ],
+    "title": "operation",
     "slices": []
   }
 }

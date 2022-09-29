@@ -11,13 +11,17 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "siteTitle": [
-      {
-        "type": "heading1",
-        "text": "Finally",
-        "spans": []
-      }
-    ],
+    "siteTitle": "unit",
+    "description": "strike",
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
+    },
     "logo": {
       "dimensions": {
         "width": 900,
@@ -25,12 +29,12 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43"
+      "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e"
     },
     "contact": [
       {
         "type": "paragraph",
-        "text": "Magna velit ea ea nisi consequat consectetur ullamco adipisicing. Ad nisi sint esse culpa.",
+        "text": "Ullamco exercitation amet dolor in reprehenderit ipsum.",
         "spans": []
       }
     ]

@@ -16,9 +16,13 @@ const Page = ({ page, navigation, settings}) => {
     >
       <Head>
         <title>
-          {prismicH.asText(page.data.title)} |{" "}
-          {prismicH.asText(settings.data.siteTitle)}
+          {page.data.title} |{" "}
+          {settings.data.siteTitle}
         </title>
+        <meta name="description" content={page.data.title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={settings.data.siteTitle} />
+        <meta property="og:description" content={page.data.title} />
       </Head>
       <div className="container">
         <SliceZone slices={page.data.slices} components={components} />

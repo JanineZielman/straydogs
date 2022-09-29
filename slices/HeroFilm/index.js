@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
+import Head from "next/head";
 import { PrismicRichText, PrismicLink } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
+import { linkResolver } from "../../prismicio";
 
 const HeroFilm = ({ slice }) => {
 
@@ -55,6 +57,10 @@ const HeroFilm = ({ slice }) => {
   }
 
   return(
+    <>
+    <Head>
+      <meta property="og:image" content={slice.primary.image.url} />
+    </Head>
     <div className='hero-film'>
       <div className={`hero-image ${slice.primary.height}`} onClick={stopTrailer} id="heroImg">
         <div className={`img-wrapper ${slice.primary.vertical_position}`}>
@@ -75,9 +81,17 @@ const HeroFilm = ({ slice }) => {
             <div className='main-links'>
               {slice.items.map((item,i) => {
                 return(
-                  <a href={item.link.url ? item.link.url : `/${item.link.lang}/${item.link.uid}`} target={item.link.url && '_blank'}>
-                    {item.label}
-                  </a>
+                  <>
+                    {item.link.url ?
+                      <a href={item.link.url} target={ '_blank'}>
+                        {item.label}
+                      </a>
+                    : 
+                      <a href={linkResolver(item.link)}>
+                        {item.label}
+                      </a>
+                    }
+                  </>
                 )
               })}
             </div>
@@ -112,6 +126,7 @@ const HeroFilm = ({ slice }) => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

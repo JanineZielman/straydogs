@@ -10,14 +10,7 @@
         }
       }
     },
-    "page": {
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    },
+    "page": {},
     "article": {
       "title": {
         "config": {
@@ -27,12 +20,6 @@
       }
     },
     "settings": {
-      "siteTitle": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      },
       "contact": {
         "config": {
           "patternType": "PARAGRAPH",

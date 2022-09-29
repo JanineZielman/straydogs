@@ -1,11 +1,8 @@
 import Head from "next/head";
-import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
 import { createClient } from "../prismicio";
-import { components } from "../slices/";
 import { Layout } from "../components/Layout";
 
 const Index = ({ page, navigation, settings}) => {
@@ -17,7 +14,12 @@ const Index = ({ page, navigation, settings}) => {
       page={page}
     >
       <Head>
-        <title>{prismicH.asText(page.data.title)}</title>
+        <title>{settings.data.siteTitle}</title>
+        <meta name="description" content={settings.data.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={settings.data.siteTitle} />
+        <meta property="og:description" content={settings.data.description} />
+        <meta property="og:image" content={settings.data.image.url} />
       </Head>
       <div className="landing-page">
         <div className="img-wrapper">
