@@ -10,6 +10,18 @@
 	src: url('fonts/ABCMonumentGroteskSemi-Mono-Regular.otf') format('opentype');
 }
 
+@font-face {
+	font-family: Monument;
+	src: url('fonts/ABCMonumentGrotesk-RegularItalic.otf') format('opentype');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Monument-mono;
+	src: url('fonts/ABCMonumentGroteskSemi-Mono-RegularItalic.otf') format('opentype');
+	font-style: italic;
+}
+
 $green: #C4E31C;
 $red: rgba(255,0,0,0.35); 
 $black: rgb(20,20,20);
