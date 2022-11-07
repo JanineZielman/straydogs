@@ -21,6 +21,7 @@
     "@prismicio/slice-simulator-react": "^0.2.2",
     "@vimeo/player": "^2.17.1",
     "clsx": "^1.2.1",
+    "file-saver": "^2.0.5",
     "flag-icons": "^6.6.4",
     "next": "12.2.4",
     "react": "18.2.0",

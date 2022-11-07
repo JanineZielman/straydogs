@@ -1,4 +1,5 @@
 import React from 'react'
+import { saveAs } from 'file-saver'
 
 const Files = ({ slice }) => {
   return(
@@ -9,14 +10,17 @@ const Files = ({ slice }) => {
       }
       <div className='wrapper' id={slice.primary.sectionid}>
         {slice.items.map((item, i) => {
+          const downloadImage = () => {
+            saveAs(`${item.file?.url}`, `${item.file?.name}`)
+          }
           return(
-            <a className='file-item' href={`${item.file?.url}`} target="_blank">
+            <div className='file-item' onClick={downloadImage} id={item.file?.url} key={`file${i}`}>
               <div className='image'>
-                <iframe src={item.file?.url}/>
+                <embed src={`${item.file?.url}`} />
               </div>
               <p className='green'>{item.download_label}</p>
               <h3>{item.title}</h3>
-            </a>
+            </div>
           )
         })}
       </div>
