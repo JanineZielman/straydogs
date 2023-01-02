@@ -228,19 +228,20 @@
 	.ondemand {
 		.trailer{
 			margin-top: 48px;
+			width: 96%;
 		}
 		.flex{
 			flex-direction: column;
 		}
 		.info{
-			width: 100%;
+			width: 96%;
 		}
 		.rent-button{
 			padding: 5px 20px;
 		}
 		.poster{
-			width: 100%;
-			max-width: 100%;
+			width: 96%;
+			max-width: 96%;
 		}
 	}
 }

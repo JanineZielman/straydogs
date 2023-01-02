@@ -26,7 +26,9 @@ const Page = ({ page, navigation, settings }) => {
         <meta property="og:description" content={page.data.title} />
       </Head>
       <div className="container ondemand">
-        <div className="trailer" dangerouslySetInnerHTML={{__html: page.data.embed}} />
+        <div className="trailer">
+					<iframe src={page.data.embed}/>
+				</div>
 				<div className="flex">
 					<div className="info">
 						<p className="year">{page.data.year}</p>
