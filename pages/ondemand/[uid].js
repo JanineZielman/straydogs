@@ -26,39 +26,51 @@ const Page = ({ page, navigation, settings }) => {
         <meta property="og:description" content={page.data.title} />
       </Head>
       <div className="container ondemand">
-        <div className="trailer">
-					<iframe src={page.data.embed}/>
-				</div>
+        {page.data.embed &&
+          <div className="trailer">
+            <iframe src={page.data.embed}/>
+          </div>
+        }
 				<div className="flex">
 					<div className="info">
 						<p className="year">{page.data.year}</p>
 						<h1>{page.data.title}</h1>
 						<div className="details">
-							<span>Genres:
-								{page.data.genres.map((item,i) => (
-									<span key={`genre${i}`}> {item.genre}</span>
-								))}
-							</span>
-							<span>Duration: <span>{page.data.duration}</span></span>
-							<span>Subtitles:
-								{page.data.subtitles.map((item,i) => (
-									<span key={`language${i}`}> {item.language}</span>
-								))}
-							</span>
-							<span>Availability:
-								{page.data.availability.map((item,i) => (
-									<span key={`country${i}`}> {item.country}</span>
-								))}
-							</span>
+              {page.data.genres &&
+                <span>Genres:
+                  {page.data.genres?.map((item,i) => (
+                    <span key={`genre${i}`}> {item.genre}</span>
+                  ))}
+                </span>
+              }
+              {page.data.duration &&
+							  <span>Duration: <span>{page.data.duration}</span></span>
+              }
+              {page.data.subtitles &&
+                <span>Subtitles:
+                  {page.data.subtitles?.map((item,i) => (
+                    <span key={`language${i}`}> {item.language}</span>
+                  ))}
+                </span>
+              }
+              {page.data.availability &&
+                <span>Availability:
+                  {page.data.availability?.map((item,i) => (
+                    <span key={`country${i}`}> {item.country}</span>
+                  ))}
+                </span>
+              }
 						</div>
 						<div className="description">
 							<PrismicRichText field={page.data.description}/>
 						</div>
 					</div>
 					<div className="poster">
-						<div className="rent-button">
-							<a href={page.data.rent_link.url} target="_blank" rel="noreferrer">{page.data.rent_link_text}</a>
-						</div>
+            {page.data.rent_link &&
+              <div className="rent-button">
+                <a href={page.data.rent_link?.url} target="_blank" rel="noreferrer">{page.data.rent_link_text}</a>
+              </div>
+            }
 						<PrismicNextImage field={page.data.poster} layout="intrinsic" />
 					</div>
 				</div>
