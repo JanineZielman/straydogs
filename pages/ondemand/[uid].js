@@ -55,7 +55,7 @@ const Page = ({ page, navigation, settings }) => {
 					</div>
 					<div className="poster">
 						<div className="rent-button">
-							<a href={page.data.rent_link.url} target="_blank">{page.data.rent_link_text}</a>
+							<a href={page.data.rent_link.url} target="_blank" rel="noreferrer">{page.data.rent_link_text}</a>
 						</div>
 						<PrismicNextImage field={page.data.poster} layout="intrinsic" />
 					</div>
