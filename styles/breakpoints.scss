@@ -225,4 +225,22 @@
 			flex-wrap: wrap;
 		}
 	} 
+	.ondemand {
+		.trailer{
+			margin-top: 48px;
+		}
+		.flex{
+			flex-direction: column;
+		}
+		.info{
+			width: 100%;
+		}
+		.rent-button{
+			padding: 5px 20px;
+		}
+		.poster{
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }

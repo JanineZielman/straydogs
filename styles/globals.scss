@@ -1022,3 +1022,59 @@ button:focus {
 .active {
 	color: $green!important;
 }
+
+.ondemand{
+	.trailer{
+		margin-top: 24px;
+	}
+	.year{
+		margin: 0;
+	}
+	.flex{
+		display: flex;
+		justify-content: space-between;
+	}
+	.info{
+		width: 50%;
+		h1{
+			margin: 0;
+			line-height: 1;
+		}
+	}
+	.rent-button{
+		padding: 0.5vw 2vw;
+		margin: 24px 0;
+		border: 1px solid white;
+		text-align: center;
+		width: fit-content;
+		a{
+			color: white;
+		}
+		&:hover{
+			a {
+				color: $green;
+			}
+		}
+	}
+	.details{
+		margin-top: 24px;
+		span{
+			display: block;
+			span{
+				display: inline-block;
+				margin-left: 14px;
+			}
+		}
+	}
+	.poster{
+		width: 40%;
+		max-width: 400px;
+		height: auto;
+		position: relative;
+		img{
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+}
