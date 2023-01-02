@@ -7,7 +7,6 @@ import { PrismicRichText } from '@prismicio/react'
 import { PrismicNextImage } from "@prismicio/next";
 
 const Page = ({ page, navigation, settings }) => {
-	console.log(page)
   return (
     <Layout
       alternateLanguages={page.alternate_languages}
