@@ -19,13 +19,21 @@ const nextConfig = async () => {
       // a non-locale prefixed path e.g. `/hello`
       defaultLocale: locales[0],
     },
-    async rewrites() {
-      return [
-        {
-          source: '/no/ondemand/ikke-en-sann-fyr',
-          destination: 'https://ikkeensannfyr.straydogs.no/'
-        },
-      ]
+    rewrites() {
+      return {
+        beforeFiles: [
+          {
+            source: '/',
+            has: [
+                {
+                    type: 'host',
+                    value: 'ikkeensannfyr.straydogs.no',
+                },
+            ],
+            destination: '/no/ondemand/ikke-en-sann-fyr',
+          },
+        ]
+      }
     },
     redirects() {
       return [
