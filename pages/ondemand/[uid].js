@@ -19,6 +19,7 @@ const Page = ({ page, navigation, settings }) => {
           {page.data.title} |{" "}
           {settings.data.siteTitle}
         </title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="description" content={page.data.title} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={settings.data.siteTitle} />
